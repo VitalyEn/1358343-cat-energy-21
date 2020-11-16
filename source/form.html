@@ -15,25 +15,23 @@
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="../index.html">
-                Главная
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#">
-                Каталог продукции
-              </a>
-            </li>
-            <li class="main-nav__item main-nav__item--active">
-              <a>
-                Подбор программы
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="../index.html">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a>
+              Подбор программы
+            </a>
+          </li>
+        </ul>
       </nav>
     </div>
   </header>
@@ -41,47 +39,81 @@
   <main class="page-main">
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
       <h1>Подбор программы</h1>
-      <fieldset>
+      <fieldset class="data">
         <legend>Заполните анкету, и мы подберем
           программу питания для вашего кота</legend>
-          <label for="name">ИМЯ:*</label>
-          <input type="text" name="name" id="name" value="Барсик">
-          <label for="weight">Вес (кг):*</label>
-          <input type="text" name="weight" id="weight" value="7">
-          <label for="age">Возраст (лет):</label>
-          <input type="text" name="age" id="age" value="7">
+          <ul class="data__list">
+            <li class="data__item">
+              <label class="data__label" for="name">ИМЯ:*</label>
+              <input class="data__input" type="text" name="name" id="name" value="Барсик">
+            </li>
+            <li class="data__item">
+              <label class="data__label" for="weight">Вес (кг):*</label>
+              <input class="data__input" type="number" name="weight" id="weight" value="7">
+            </li>
+            <li class="data__item">
+              <label class="data__label" for="age">Возраст (лет):</label>
+              <input class="data__input" type="number" name="age" id="age" value="7">
+            </li>
+          </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="programs-choice">
           <legend>Выбор программы</legend>
-          <p><input name="program" type="radio" value="lower" checked>Похудение</p>
-          <p><input name="program" type="radio" value="higher">Набор массы</p>
-          <p><input name="program" type="radio" value="unknown">Не знаю (Нужен ваш совет)</p>
+          <ul class="programs-choice__list">
+            <li class="programs-choice__item">
+              <label><input class="programs-choice__input" name="program" type="radio" value="lower" checked>Похудение</label>
+            </li>
+            <li class="programs-choice__item">
+              <label><input class="programs-choice__input" name="program" type="radio" value="higher">Набор массы</label>
+            </li>
+            <li class="programs-choice__item">
+              <label><input class="programs-choice__input" name="program" type="radio" value="unknown">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="client-contacts">
           <legend>Контактные данные
             (владельца кота)</legend>
-            <label for="email">E-mail:*</label>
-            <input type="email" name="email" id="email" value="kuklachev@gmail.com">
-            <label for="phone">Телефон:*</label>
-            <input type="tel" name="phone" id="phone" value="8 (960) 900-60-90">
+            <ul class="client-contacts__list">
+              <li class="client-contacts__item">
+                <label class="client-contacts__label" for="email">E-mail:*</label>
+                <input class="client-contacts__input" type="email" name="email" id="email" value="kuklachev@gmail.com">
+              </li>
+              <li class="client-contacts__item">
+                <label class="client-contacts__label" for="phone">Телефон:*</label>
+                <input class="client-contacts__input" type="tel" name="phone" id="phone" value="8 (960) 900-60-90">
+              </li>
+            </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="comments">
             <legend>Комментарий</legend>
-            <input type="text" name="comment" value="Расскажите обо всех повАдках кота">
+            <label>
+              <input class="comments__input" type="text" name="comment" value="Расскажите обо всех повАдках кота">
+            </label>
           </fieldset>
-          <fieldset>
+          <fieldset class="extend">
             <legend>Дополнительно</legend>
-            <input type="checkbox" name="altsugar" id="altsugar" checked>
-            <label for="altsugar">Сахарозаменитель</label>
-            <input type="checkbox" name="water" id="water" checked>
-            <label for="water">Питьевая вода</label>
-            <input type="checkbox" name="Milk" id="Milk" checked>
-            <label for="Milk">Молоко</label>
-            <input type="checkbox" name="vitamin" id="vitamin" checked>
-            <label for="vitamin">Витамины</label>
+            <ul class="extend__list">
+              <li class="extend__item">
+                <input class="extend__input" type="checkbox" name="altsugar" id="altsugar" checked>
+                <label class="extend__label" for="altsugar">Сахарозаменитель</label>
+              </li>
+              <li class="extend__item">
+                <input class="extend__input" type="checkbox" name="water" id="water" checked>
+                <label class="extend__label" for="water">Питьевая вода</label>
+              </li>
+              <li class="extend__item">
+                <input class="extend__input" type="checkbox" name="Milk" id="Milk" checked>
+                <label class="extend__label" for="Milk">Молоко</label>
+              </li>
+              <li class="extend__item">
+                <input class="extend__input" type="checkbox" name="vitamin" id="vitamin" checked>
+                <label class="extend__label" for="vitamin">Витамины</label>
+              </li>
+            </ul>
           </fieldset>
           <small>* — Обязательные поля</small>
-          <button type="submit" name="button">отправить заявку</button>
+          <button class="form__button" type="submit" name="button">отправить заявку</button>
         </form>
       </main>
 
