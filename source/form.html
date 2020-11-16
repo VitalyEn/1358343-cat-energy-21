@@ -43,58 +43,80 @@
       <h1>Подбор программы</h1>
       <fieldset>
         <legend>Заполните анкету, и мы подберем
-программу питания для вашего кота</legend>
-      </fieldset>
-      <fieldset>
-        <legend>Выбор программы</legend>
-      </fieldset>
-      <fieldset>
-<legend>Контактные данные
-(владельца кота)</legend>
-      </fieldset>
-      <fieldset>
-        <legend>Комментарий</legend>
-      </fieldset>
-      <fieldset>
-        <legend>Дополнительно</legend>
-      </fieldset>
-      <small>* — Обязательные поля</small>
-      <button type="submit" name="button">отправить заявку</button>
-    </form>
-  </main>
+          программу питания для вашего кота</legend>
+          <label for="name">ИМЯ:*</label>
+          <input type="text" name="name" id="name" value="Барсик">
+          <label for="weight">Вес (кг):*</label>
+          <input type="text" name="weight" id="weight" value="7">
+          <label for="age">Возраст (лет):</label>
+          <input type="text" name="age" id="age" value="7">
+        </fieldset>
+        <fieldset>
+          <legend>Выбор программы</legend>
+          <p><input name="program" type="radio" value="lower" checked>Похудение</p>
+          <p><input name="program" type="radio" value="higher">Набор массы</p>
+          <p><input name="program" type="radio" value="unknown">Не знаю (Нужен ваш совет)</p>
+        </fieldset>
+        <fieldset>
+          <legend>Контактные данные
+            (владельца кота)</legend>
+            <label for="email">E-mail:*</label>
+            <input type="email" name="email" id="email" value="kuklachev@gmail.com">
+            <label for="phone">Телефон:*</label>
+            <input type="tel" name="phone" id="phone" value="8 (960) 900-60-90">
+          </fieldset>
+          <fieldset>
+            <legend>Комментарий</legend>
+            <input type="text" name="comment" value="Расскажите обо всех повАдках кота">
+          </fieldset>
+          <fieldset>
+            <legend>Дополнительно</legend>
+            <input type="checkbox" name="altsugar" id="altsugar" checked>
+            <label for="altsugar">Сахарозаменитель</label>
+            <input type="checkbox" name="water" id="water" checked>
+            <label for="water">Питьевая вода</label>
+            <input type="checkbox" name="Milk" id="Milk" checked>
+            <label for="Milk">Молоко</label>
+            <input type="checkbox" name="vitamin" id="vitamin" checked>
+            <label for="vitamin">Витамины</label>
+          </fieldset>
+          <small>* — Обязательные поля</small>
+          <button type="submit" name="button">отправить заявку</button>
+        </form>
+      </main>
 
-  <footer class="page-footer">
-    <div class="page-footer__contacts contacts wrapper">
-      <p><b class="contacts__slogan">приглашаем
-        к сотрудничеству дилеров!</b></p>
-        <p class="contacts__text">ул. Большая
-          Конюшенная, д. 19/8
-          <span>Санкт-Петербург</span></p>
-        </div>
-        <div class="page-footer__map">
-          <img src="" alt="Карта проезда">
-        </div>
-        <div class="page-footer__links wrapper">
-          <div class="page-footer__social social">
-            <a class="social__title" href="#">CAT ENERGY</a>
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте"></a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке"></a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме"></a>
-              </li>
-            </ul>
-          </div>
-          <div class="page-footer__copyright copyright">
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <img src="" width="281" height="34" alt="HTML Academy">
-            </a>
-          </div>
-        </div>
-      </footer>
-    </body>
-    </html>
+      <footer class="page-footer">
+        <div class="page-footer__contacts contacts wrapper">
+          <p><b class="contacts__slogan">приглашаем
+            к сотрудничеству дилеров!</b></p>
+            <p class="contacts__text">ул. Большая
+              Конюшенная, д. 19/8
+              <span>Санкт-Петербург</span></p>
+            </div>
+            <div class="page-footer__map">
+              <img src="" alt="Карта проезда">
+            </div>
+            <div class="page-footer__links wrapper">
+              <div class="page-footer__social social">
+                <a class="social__title" href="#">CAT ENERGY</a>
+                <ul class="social__list">
+                  <li class="social__item">
+                    <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте"></a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке"></a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме"></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="page-footer__copyright copyright">
+                <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+                  <img src="" width="281" height="34" alt="HTML Academy">
+                </a>
+              </div>
+            </div>
+          </footer>
+        </body>
+        </html>
