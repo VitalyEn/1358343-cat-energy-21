@@ -8,7 +8,7 @@
 <body class="page-body">
   <header class="page-header">
     <div class="page-header__wrapper wrapper">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <img src="img/logotype-mobile.svg" width="34" height="38" alt="Логотип Cat Energy">
         <span>CAT ENERGY</span>
       </a>
@@ -17,7 +17,7 @@
         </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="../index.html">
+            <a href="index.html">
               Главная
             </a>
           </li>
@@ -45,11 +45,11 @@
           <ul class="data__list">
             <li class="data__item">
               <label class="data__label" for="name">ИМЯ:*</label>
-              <input class="data__input" type="text" name="name" id="name" value="Барсик">
+              <input class="data__input" type="text" name="name" id="name" value="Барсик" required>
             </li>
             <li class="data__item">
               <label class="data__label" for="weight">Вес (кг):*</label>
-              <input class="data__input" type="number" name="weight" id="weight" value="7">
+              <input class="data__input" type="number" name="weight" id="weight" value="7" required>
             </li>
             <li class="data__item">
               <label class="data__label" for="age">Возраст (лет):</label>
@@ -77,11 +77,11 @@
             <ul class="client-contacts__list">
               <li class="client-contacts__item">
                 <label class="client-contacts__label" for="email">E-mail:*</label>
-                <input class="client-contacts__input" type="email" name="email" id="email" value="kuklachev@gmail.com">
+                <input class="client-contacts__input" type="email" name="email" id="email" value="kuklachev@gmail.com" required>
               </li>
               <li class="client-contacts__item">
                 <label class="client-contacts__label" for="phone">Телефон:*</label>
-                <input class="client-contacts__input" type="tel" name="phone" id="phone" value="8 (960) 900-60-90">
+                <input class="client-contacts__input" type="tel" name="phone" id="phone" value="8 (960) 900-60-90" required>
               </li>
             </ul>
           </fieldset>
@@ -112,25 +112,25 @@
               </li>
             </ul>
           </fieldset>
-          <small>* — Обязательные поля</small>
+          <p><sup>*</sup> — Обязательные поля</p>
           <button class="form__button" type="submit" name="button">отправить заявку</button>
         </form>
       </main>
 
       <footer class="page-footer">
         <div class="page-footer__contacts contacts wrapper">
-          <p><b class="contacts__slogan">приглашаем
+          <p class="contacts__slogan"><b>приглашаем
             к сотрудничеству дилеров!</b></p>
             <p class="contacts__text">ул. Большая
               Конюшенная, д. 19/8
               <span>Санкт-Петербург</span></p>
             </div>
             <div class="page-footer__map">
-              <img src="" alt="Карта проезда">
+              <img src="https://via.placeholder.com/150x150" alt="Карта проезда">
             </div>
             <div class="page-footer__links wrapper">
               <div class="page-footer__social social">
-                <a class="social__title" href="#">CAT ENERGY</a>
+                <a class="social__title" href="index.html">CAT ENERGY</a>
                 <ul class="social__list">
                   <li class="social__item">
                     <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте"></a>
