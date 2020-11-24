@@ -2,8 +2,9 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CAT ENERGY</title>
-  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -17,7 +18,7 @@
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
         </button>
-        <ul class="main-nav__list">
+        <ul class="main-nav__list list-style">
           <li class="main-nav__item">
             <a href="index.html">
               Главная
@@ -43,7 +44,7 @@
       <h1>Подбор программы</h1>
       <fieldset class="data">
         <legend>Заполните анкету, и мы подберем программу питания для вашего кота</legend>
-        <ul class="data__list">
+        <ul class="data__list list-style">
           <li class="data__item">
             <label class="data__label" for="name">ИМЯ:*</label>
             <input class="data__input" type="text" name="name" id="name" value="Барсик" required>
@@ -60,7 +61,7 @@
       </fieldset>
       <fieldset class="programs-choice">
         <legend class="visually-hidden">Выбор программы</legend>
-        <ul class="programs-choice__list">
+        <ul class="programs-choice__list list-style">
           <li class="programs-choice__item">
             <label><input class="programs-choice__input" name="program" type="radio" value="lower" checked>Похудение</label>
           </li>
@@ -74,7 +75,7 @@
       </fieldset>
       <fieldset class="client-contacts">
         <legend>Контактные данные (владельца кота)</legend>
-        <ul class="client-contacts__list">
+        <ul class="client-contacts__list list-style">
           <li class="client-contacts__item">
             <label class="client-contacts__label" for="email">E-mail:*</label>
             <input class="client-contacts__input" type="email" name="email" id="email" value="kuklachev@gmail.com" required>
@@ -93,7 +94,7 @@
       </fieldset>
       <fieldset class="extend">
         <legend>Дополнительно</legend>
-        <ul class="extend__list">
+        <ul class="extend__list list-style">
           <li class="extend__item">
             <input class="extend__input" type="checkbox" name="altsugar" id="altsugar" checked>
             <label class="extend__label" for="altsugar">Сахарозаменитель</label>
@@ -128,7 +129,7 @@
     <div class="page-footer__links wrapper">
       <div class="page-footer__social social">
         <a class="social__title" href="index.html">CAT ENERGY</a>
-        <ul class="social__list">
+        <ul class="social__list list-style">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте"></a>
           </li>
