@@ -5,9 +5,9 @@
 .programs__header {
   background-image: url("../img/index-background.jpg");
   background-repeat: no-repeat;
-  background-color: rgba(104, 183, 56, 0.85);
+  background-color: $background-cat;
 }
 
 .programs__item {
-  background-color: #f2f2f2;
+  background-color: $background-grey;
 }
