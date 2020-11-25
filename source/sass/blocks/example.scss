@@ -9,7 +9,7 @@
 }
 
 .example__description {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: $text-color;
@@ -23,7 +23,7 @@
 }
 
 .example__text {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
   color: $text-color;
@@ -31,7 +31,7 @@
 }
 
 .example__item-last .example__text {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: $menu-color;
