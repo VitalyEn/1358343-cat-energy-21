@@ -2,6 +2,20 @@
   background-color: $background-grey;
 }
 
+.contacts__slogan {
+  font-size: 16px;
+  line-height: 18px;
+  color: $menu-color;
+  text-transform: uppercase;
+}
+
+.contacts__text {
+  font-family: "Arial";
+  font-size: 14px;
+  line-height: 20px;
+  color: $text-color;
+}
+
 .page-footer__map {
   background-image: url("../img/map.jpg");
   background-repeat: cover;

@@ -1,5 +1,5 @@
 .programs {
-  color: #ffffff;
+  color: $button-color;
 }
 
 .programs__header {
@@ -8,6 +8,32 @@
   background-color: $background-cat;
 }
 
+.programs__link {
+  font-size: 14px;
+  line-height: 18px;
+  color: $button-color;
+  text-transform: uppercase;
+}
+
 .programs__item {
   background-color: $background-grey;
+}
+
+.programs__item-header {
+  font-size: 24px;
+  line-height: 37px;
+  color: $menu-color;
+  text-transform: uppercase;
+}
+
+.programs__description {
+  font-size: 14px;
+  line-height: 18px;
+  color: $text-color;
+}
+
+.programs__item-link {
+  font-size: 16px;
+  line-height: 16px;
+  color: $menu-color;
 }

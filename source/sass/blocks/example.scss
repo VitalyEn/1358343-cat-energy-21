@@ -1,3 +1,38 @@
 .example {
   background-color: $background-dark-grey;
 }
+
+.example__title {
+  font-size: 36px;
+  line-height: 40px;
+  color: $menu-color;
+}
+
+.example__description {
+  font-family: "Arial";
+  font-size: 14px;
+  line-height: 18px;
+  color: $text-color;
+}
+
+.example__number {
+  font-size: 24px;
+  line-height: 24px;
+  color: $menu-color;
+  text-transform: uppercase;
+}
+
+.example__text {
+  font-family: "Arial";
+  font-size: 12px;
+  line-height: 12px;
+  color: $text-color;
+  text-transform: uppercase;
+}
+
+.example__item-last .example__text {
+  font-family: "Oswald";
+  font-size: 14px;
+  line-height: 20px;
+  color: $menu-color;
+}
