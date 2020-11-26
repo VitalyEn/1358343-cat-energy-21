@@ -8,6 +8,19 @@
   background-color: $background-cat;
 }
 
+.programs__header-title {
+  font-size: 36px;
+  line-height: 36px;
+  color: $button-color;
+}
+
+.programs__intro {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $button-color;
+}
+
 .programs__link {
   font-size: 14px;
   line-height: 18px;
@@ -27,6 +40,7 @@
 }
 
 .programs__description {
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: $text-color;
@@ -36,4 +50,5 @@
   font-size: 16px;
   line-height: 16px;
   color: $menu-color;
+  text-transform: uppercase;
 }

@@ -53,6 +53,20 @@ a {
   }
 }
 
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  color: $menu-color;
+}
+
+p {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $text-color;
+}
+
 .form fieldset {
   border: none;
 }

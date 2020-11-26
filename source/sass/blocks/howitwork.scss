@@ -1,3 +1,7 @@
+.howitwork {
+  background-color: $main-background;
+}
+
 .howitwork__title {
   font-size: 36px;
   line-height: 40px;
@@ -9,4 +13,28 @@
   font-size: 14px;
   line-height: 18px;
   color: $text-color;
+}
+
+.howitwork__item--green {
+  background-image: url("../img/green.svg");
+  width: 60px;
+  height: 60px;
+}
+
+.howitwork__item--box {
+  background-image: url("../img/box.svg");
+  width: 60px;
+  height: 60px;
+}
+
+.howitwork__item--meal {
+  background-image: url("../img/meal.svg");
+  width: 60px;
+  height: 60px;
+}
+
+.howitwork__item--time {
+  background-image: url("../img/time.svg");
+  width: 60px;
+  height: 60px;
 }
