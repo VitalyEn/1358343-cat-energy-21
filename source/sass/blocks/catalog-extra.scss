@@ -3,15 +3,20 @@
   background-image: url("../img/gift.jpg");
   width: 280px;
   height: 289px;
+}
+
+.catalog-extra__bonus-text {
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: $button-color;
+  font-weight: 400;
 }
 
 .catalog-extra__title {
   font-size: 24px;
   line-height: 24px;
+  font-weight: 400;
 }
 
 .catalog-extra__item-title {
