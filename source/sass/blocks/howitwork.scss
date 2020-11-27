@@ -15,26 +15,27 @@
   color: $text-color;
 }
 
-.howitwork__item--green {
-  background-image: url("../img/green.svg");
+.howitwork__item::before {
+  content: "";
+  display: block;
   width: 60px;
   height: 60px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.howitwork__item--box {
+.howitwork__item--green::before {
+  background-image: url("/img/green.svg");
+}
+
+.howitwork__item--box::before {
   background-image: url("../img/box.svg");
-  width: 60px;
-  height: 60px;
 }
 
-.howitwork__item--meal {
+.howitwork__item--meal::before {
   background-image: url("../img/meal.svg");
-  width: 60px;
-  height: 60px;
 }
 
-.howitwork__item--time {
+.howitwork__item--time::before {
   background-image: url("../img/time.svg");
-  width: 60px;
-  height: 60px;
 }
