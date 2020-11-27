@@ -1,0 +1,41 @@
+.howitwork {
+  background-color: $main-background;
+}
+
+.howitwork__title {
+  font-size: 36px;
+  line-height: 40px;
+  color: $menu-color;
+}
+
+.howitwork__item {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $text-color;
+}
+
+.howitwork__item::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.howitwork__item--green::before {
+  background-image: url("/img/green.svg");
+}
+
+.howitwork__item--box::before {
+  background-image: url("../img/box.svg");
+}
+
+.howitwork__item--meal::before {
+  background-image: url("../img/meal.svg");
+}
+
+.howitwork__item--time::before {
+  background-image: url("../img/time.svg");
+}

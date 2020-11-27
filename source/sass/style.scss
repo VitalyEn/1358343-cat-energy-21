@@ -1,8 +1,26 @@
-@import "source/sass/global/normalize.scss";
+//Global
+@import "source/sass/global/variables.scss";
+//@import "source/sass/global/normalize.scss";
 @import "source/sass/global/fonts.scss";
 @import "source/sass/global/common.scss";
-@import "source/sass/blocks/programs.scss";
-@import "source/sass/blocks/example.scss";
+//blocks
+@import "source/sass/blocks/page-body.scss";
+@import "source/sass/blocks/page-header.scss";
+@import "source/sass/blocks/main-nav.scss";
 @import "source/sass/blocks/page-footer.scss";
+@import "source/sass/blocks/button.scss";
+//Index
+@import "source/sass/blocks/programs.scss";
+@import "source/sass/blocks/howitwork.scss";
+@import "source/sass/blocks/example.scss";
+//Form
 @import "source/sass/blocks/form.scss";
 @import "source/sass/blocks/data.scss";
+@import "source/sass/blocks/programs-choice.scss";
+@import "source/sass/blocks/client-contacts.scss";
+@import "source/sass/blocks/comments.scss";
+@import "source/sass/blocks/extend.scss";
+//Catalog
+@import "source/sass/blocks/catalog.scss";
+@import "source/sass/blocks/data-list.scss";
+@import "source/sass/blocks/catalog-extra.scss";
