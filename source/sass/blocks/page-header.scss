@@ -1,4 +1,19 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+}
+
 .page-header__logo img {
   width: 34px;
   height: 38px;
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+
+  @media (min-width: $tablet-width) {
+    height: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 59px;
+  }
 }
