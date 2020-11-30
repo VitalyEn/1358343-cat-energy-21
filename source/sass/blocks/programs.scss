@@ -1,9 +1,5 @@
 .programs {
   color: $button-color;
-
-  @media (min-width: $tablet-width) {
-    padding: 0 30px;
-  }
 }
 
 .programs__wrapper {

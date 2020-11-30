@@ -69,6 +69,10 @@ a {
   min-width: 280px;
   margin: 0 auto;
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
 }
 
 .visually-hidden {
