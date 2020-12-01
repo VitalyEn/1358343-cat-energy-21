@@ -1,5 +1,21 @@
 .example {
   background-color: $background-dark-grey;
+  outline: 5px solid red;
+  outline-offset: -5px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.example__block {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    max-width: 436px;
+  }
 }
 
 .example__title {
@@ -13,6 +29,15 @@
   font-size: 14px;
   line-height: 18px;
   color: $text-color;
+}
+
+.example__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.example__item {
+  min-width: 124px;
 }
 
 .example__number {
@@ -35,4 +60,9 @@
   font-size: 14px;
   line-height: 20px;
   color: $menu-color;
+}
+
+.example__live {
+  display: block;
+  max-width: 690px;
 }

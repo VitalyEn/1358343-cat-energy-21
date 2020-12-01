@@ -1,4 +1,21 @@
+.page-header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-header__logo {
+  max-width: 320px;
+}
+
 .page-header__logo img {
   width: 34px;
   height: 38px;
+
+  @media (min-width: $tablet-width) {
+    height: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 59px;
+  }
 }

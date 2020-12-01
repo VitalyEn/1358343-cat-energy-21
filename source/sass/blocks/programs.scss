@@ -2,10 +2,24 @@
   color: $button-color;
 }
 
+.programs__wrapper {
+  @media (min-width: $desktop-width) {
+    margin: auto;
+    max-width: 1220px;
+  }
+}
+
 .programs__header {
   background-image: url("../img/index-background.png");
   background-repeat: no-repeat;
   background-color: $background-cat;
+}
+
+.programs__list {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .programs__header-title {

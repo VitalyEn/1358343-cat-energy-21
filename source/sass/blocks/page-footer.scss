@@ -20,5 +20,24 @@
   background-image: url("../img/map.jpg");
   background-repeat: cover;
   height: 362px;
-  width: 320px;
+  width: 100%;
+}
+
+.page-footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.social__title {
+  min-width: 320px;
+}
+
+.page-footer__social {
+  min-width: 320px;
+}
+
+.social__list {
+  display: flex;
+  justify-content: space-around;
 }
