@@ -1,6 +1,10 @@
-.page-header {
+.page-header__wrapper {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.page-header__logo {
+  max-width: 320px;
 }
 
 .page-header__logo img {
