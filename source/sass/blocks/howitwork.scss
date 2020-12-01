@@ -29,6 +29,7 @@
 }
 
 .howitwork__item {
+  position: relative;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -42,7 +43,7 @@
 
 .howitwork__item::before {
   content: "";
-  display: block;
+  position: absolute;
   width: 60px;
   height: 60px;
   background-repeat: no-repeat;
