@@ -8,3 +8,13 @@
   line-height: 18px;
   text-transform: uppercase;
 }
+
+.extend__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.extend__item {
+  min-width: 280px;
+}
