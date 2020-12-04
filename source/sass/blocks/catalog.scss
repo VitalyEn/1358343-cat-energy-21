@@ -19,3 +19,21 @@
   line-height: 16px;
   color: $text-color;
 }
+
+.catalog__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.catalog__item {
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
+}
