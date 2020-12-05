@@ -1,7 +1,5 @@
 .example {
   background-color: $background-dark-grey;
-  outline: 5px solid red;
-  outline-offset: -5px;
 
   @media (min-width: $desktop-width) {
     display: flex;
