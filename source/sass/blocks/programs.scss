@@ -42,6 +42,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 80px;
   }
 }
 
@@ -119,6 +120,13 @@
     margin-left: 52px;
     padding-left: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding-left: 214px;
+    padding-top: 77px;
+    margin-bottom: 73px;
+  }
 }
 
 .programs__item-header-cat_back::before {
@@ -137,6 +145,15 @@
     left: auto;
     width: 200px;
     height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/cat_back_desktop.svg");
+    top: 41px;
+    right: auto;
+    left: 52px;
+    width: 100px;
+    height: 106px;
   }
 }
 
@@ -157,6 +174,15 @@
     width: 268px;
     height: 200px;
   }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/cat_black_2_desktop.svg");
+    top: 41px;
+    right: auto;
+    left: 33px;
+    width: 134px;
+    height: 100px;
+  }
 }
 
 .programs__description {
@@ -173,6 +199,11 @@
     font-size: 16px;
     line-height: 24px;
     margin-left: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 52px;
+    margin-bottom: 0;
   }
 }
 
@@ -193,5 +224,9 @@
     padding: 0;
     margin-left: 52px;
     margin-top: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 27px;
   }
 }
