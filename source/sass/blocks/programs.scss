@@ -12,7 +12,30 @@
 .programs__header {
   background-image: url("../img/index-background.png");
   background-repeat: no-repeat;
+  background-position: top;
   background-color: $background-cat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $main-background;
+    background-image: none;
+    align-items: flex-start;
+    padding-left: 115px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 694px;
+    flex-wrap: wrap;
+  }
+}
+
+.programs__header img {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
 }
 
 .programs__list {
@@ -26,6 +49,22 @@
   font-size: 36px;
   line-height: 36px;
   color: $button-color;
+  display: block;
+  width: 270px;
+  height: 72px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    color: $menu-color;
+    font-size: 60px;
+    line-height: 60px;
+    width: 450px;
+    height: 120px;
+    text-align: left;
+    margin-bottom: 41px;
+  }
 }
 
 .programs__intro {
@@ -33,6 +72,16 @@
   line-height: 14px;
   text-transform: uppercase;
   color: $button-color;
+  margin-top: 0;
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    color: $menu-color;
+    font-size: 20px;
+    line-height: 20px;
+    width: 283px;
+    margin-bottom: 50px;
+  }
 }
 
 .programs__link {
