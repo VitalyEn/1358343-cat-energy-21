@@ -93,13 +93,70 @@
 
 .programs__item {
   background-color: $background-grey;
+  margin-top: 20px;
+  min-height: 266px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 372px;
+  }
 }
 
 .programs__item-header {
+  margin: 0;
+  padding-left: 91px;
+  padding-top: 30px;
+  margin-bottom: 22px;
   font-size: 24px;
   line-height: 37px;
   color: $menu-color;
   text-transform: uppercase;
+  position: relative;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 52px;
+    padding-left: 0;
+  }
+}
+
+.programs__item-header-cat_back::before {
+  content: "";
+  position: absolute;
+  left: 22px;
+  top: 21px;
+  background-image: url("../img/cat_back.svg");
+  width: 50px;
+  height: 53px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/cat_back_tablet.svg");
+    top: 92px;
+    right: 102px;
+    left: auto;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.programs__item-header-cat_black-2::before {
+  content: "";
+  position: absolute;
+  left: 13px;
+  top: 21px;
+  background-image: url("../img/cat_black_2.svg");
+  width: 67px;
+  height: 50px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/cat_black_2_tablet.svg");
+    top: 91px;
+    right: 68px;
+    left: auto;
+    width: 268px;
+    height: 200px;
+  }
 }
 
 .programs__description {
@@ -107,11 +164,34 @@
   font-size: 14px;
   line-height: 18px;
   color: $text-color;
+  margin-left: 20px;
+  margin-right: 33px;
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 314px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 52px;
+  }
 }
 
 .programs__item-link {
+  display: block;
   font-size: 16px;
   line-height: 16px;
   color: $menu-color;
   text-transform: uppercase;
+  margin-left: 20px;
+  padding-top: 20px;
+  border-top: 1px solid $border-programs;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0;
+    margin-left: 52px;
+    margin-top: 52px;
+  }
 }
