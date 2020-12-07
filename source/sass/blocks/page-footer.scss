@@ -1,5 +1,9 @@
 .page-footer {
   background-color: $main-background;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }
 
 .page-footer__contacts {
@@ -11,6 +15,15 @@
 
   @media (min-width: $tablet-width) {
     min-height: 201px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    height: 201px;
+    position: absolute;
+    left: 110px;
+    top: 95px;
+    background-color: $main-background;
   }
 }
 
