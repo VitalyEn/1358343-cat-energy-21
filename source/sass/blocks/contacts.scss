@@ -1,0 +1,41 @@
+.contacts__slogan {
+  font-size: 16px;
+  line-height: 18px;
+  color: $menu-color;
+  text-transform: uppercase;
+
+  max-width: 140px;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+    max-width: 171px;
+    margin-left: 51px;
+  }
+}
+
+.contacts__text {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: $text-color;
+  max-width: 140px;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 159px;
+    min-height: 80px;
+    margin-right: 52px;
+    text-align: right;
+  }
+}
+
+.contacts__text span {
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    margin-top: 20px;
+  }
+}
