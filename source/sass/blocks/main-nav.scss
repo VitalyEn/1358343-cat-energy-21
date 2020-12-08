@@ -1,34 +1,84 @@
 .main-nav {
-  width: 100%;
-}
+  position: relative;
+  z-index: 5;
 
-@media (min-width: $tablet-width) {
-  .main-nav {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     width: 440px;
-    height: 36px;
+
     margin-right: 0;
-    margin-top: 42px;
+
     padding: 0;
   }
 
-  .main-nav__toggle {
-    display: none;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main-nav {
+  @media (min-width: $desktop-width) {
     width: 478px;
     height: 40px;
     margin-top: 69px;
   }
 }
 
+.main-nav__toggle {
+  content: "";
+  position: absolute;
+  top: -31px;
+  right: 21px;
+
+  width: 24px;
+  height: 1.5px;
+
+  background-color: $menu-color;
+  border: none;
+  transform: rotate(45deg);
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 24px;
+    height: 1.5px;
+
+    background-color: $menu-color;
+    transform: rotate(-90deg);
+  }
+
+  &::after {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+  // display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 478px;
+  }
+}
+
 .main-nav__item {
   width: auto;
-  height: 66px;
+  min-height: 66px;
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
@@ -36,6 +86,10 @@
   border-bottom: 1px solid $border-menu;
   text-align: center;
   padding-top: 22px;
+
+  &:first-child {
+    border-top: 1px solid $border-menu;
+  }
 
   @media (min-width: $tablet-width) {
     text-align: none;
@@ -47,18 +101,7 @@
 .main-nav__item a {
   width: auto;
   margin: 0;
-}
 
-.main-nav__list {
-  @media (min-width: $tablet-width) {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 478px;
-  }
+  color: $menu-color;
+  letter-spacing: 0.7px;
 }

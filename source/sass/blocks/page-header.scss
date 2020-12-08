@@ -1,4 +1,6 @@
 .page-header {
+  position: relative;
+
   width: 100%;
 }
 
@@ -6,20 +8,26 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 100%;
+  min-height: 66px;
 }
 
 .page-header__logo {
   display: flex;
   align-items: center;
   width: 100%;
+
+  min-height: 66px;
+  padding-left: 20px;
+
   text-align: center;
-  height: 66px;
-  border-bottom: 1px solid $border-menu;
+
 
   @media (min-width: $tablet-width) {
     width: 174px;
     height: 52px;
     margin-top: 24px;
+
     border: none;
   }
 
@@ -31,7 +39,7 @@
 }
 
 .page-header__logo img {
-  width: 34px;
+  width: 191px;
   height: 38px;
   margin: 0;
 
