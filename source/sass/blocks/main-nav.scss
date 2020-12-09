@@ -29,7 +29,7 @@
 .main-nav__toggle {
   content: "";
   position: absolute;
-  top: 31px;
+  top: -31px;
   right: 21px;
 
   width: 24px;
@@ -101,10 +101,16 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-
+    font-size: 18px;
+    line-height: 24px;
     text-align: none;
 
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
@@ -114,4 +120,8 @@
 
   color: $menu-color;
   letter-spacing: 0.7px;
+
+  @media (min-width: $desktop-width) {
+    color: $button-color;
+  }
 }
