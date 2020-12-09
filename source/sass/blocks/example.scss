@@ -1,4 +1,7 @@
 .example {
+  padding-top: 26px;
+  padding-bottom: 32px;
+
   background-color: $background-dark-grey;
 
   @media (min-width: $desktop-width) {
@@ -9,6 +12,8 @@
 }
 
 .example__block {
+  padding-top: 19px;
+
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
@@ -16,29 +21,56 @@
   }
 }
 
-.example__title {
-  font-size: 36px;
-  line-height: 40px;
-  color: $menu-color;
-}
+// .example__title {
+//   font-size: 36px;
+//   line-height: 40px;
+//   color: $menu-color;
+// }
 
 .example__description {
-  font-family: "Arial", sans-serif;
+  padding-left: 1px;
+
   font-size: 14px;
   line-height: 18px;
+  font-family: "Arial", sans-serif;
   color: $text-color;
 }
 
 .example__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 11px;
 }
 
 .example__item {
-  min-width: 124px;
+  position: relative;
+
+  width: 124px;
+  min-height: 56px;
+  margin-bottom: 20px;
+
+  text-align: center;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+}
+
+.example__item-last {
+  width: 100%;
+  padding-top: 14px;
+
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  border: none;
 }
 
 .example__number {
+  margin: 0;
+  padding-top: 14px;
+
   font-size: 24px;
   line-height: 24px;
   color: $menu-color;
@@ -46,21 +78,55 @@
 }
 
 .example__text {
-  font-family: "Arial", sans-serif;
+  position: absolute;
+  bottom: -29px;
+  left: 15%;
+
+  width: 82px;
+
   font-size: 12px;
   line-height: 12px;
+  font-family: "Arial", sans-serif;
   color: $text-color;
-  text-transform: uppercase;
+
+  background-color: $background-dark-grey;
 }
 
 .example__item-last .example__text {
-  font-family: "Oswald", sans-serif;
   font-size: 14px;
   line-height: 20px;
+  font-family: "Oswald", sans-serif;
   color: $menu-color;
 }
 
 .example__live {
   display: block;
   max-width: 690px;
+}
+
+.example__range {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+
+  text-align: center;
+}
+
+.example__range input {
+  display: none;
+}
+
+.example__range-input {
+  width: 84px;
+  height: 14px;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+}
+
+.example__range-text {
+  padding: 0 17px;
+
+  text-transform: uppercase;
 }

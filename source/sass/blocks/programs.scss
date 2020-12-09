@@ -4,6 +4,14 @@
   color: $button-color;
 }
 
+// .programs__wrapper {
+// Оступы изменить от wrapper
+// @media (min-width: $desktop-width) {
+//   max-width: 1220px;
+//   margin: auto;
+// }
+// }
+
 .programs__wrapper .wrapper {
   z-index: 5;
 }
@@ -13,6 +21,8 @@
 
   display: flex;
   flex-direction: column;
+  // align-items: center;
+  // padding-top: 25px;
   padding-bottom: 19px;
 
   @media (min-width: $tablet-width) {
@@ -24,8 +34,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 694px;
     flex-wrap: wrap;
+    height: 694px;
   }
 
   &::before,
@@ -63,6 +73,16 @@
   }
 }
 
+// .programs__header-item {
+//   width: 50%;
+// }
+
+// .programs__header-item--bg {
+//   min-height: 694px;
+
+//   background-color: $background-cat;
+// }
+
 .programs__header img {
   max-width: 280px;
 
@@ -73,8 +93,15 @@
 
 .programs__header-title {
   display: block;
+  // width: 270px;
+  // height: 72px;
   margin-top: 28px;
   margin-bottom: 25px;
+
+  // font-size: 36px;
+  // line-height: 36px;
+  // text-align: center;
+  // color: $button-color;
 
   @media (min-width: $tablet-width) {
     width: 450px;
@@ -94,7 +121,7 @@
 
   font-size: 14px;
   line-height: 14px;
-
+  // по середине
   text-align: center;
   color: $button-color;
   text-transform: uppercase;
@@ -103,9 +130,9 @@
     width: 283px;
     margin-bottom: 50px;
 
-    color: $menu-color;
     font-size: 20px;
     line-height: 20px;
+    color: $menu-color;
   }
 }
 
@@ -126,10 +153,16 @@
 }
 
 .programs__item {
+  // min-height: 266px;
+  // margin-top: 20px;
   margin-bottom: 17px;
   padding: 0 20px 17px;
 
   background-color: $background-grey;
+
+  @media (min-width: $tablet-width) {
+    // min-height: 372px;
+  }
 }
 
 .programs__item h3 {

@@ -1,6 +1,7 @@
 .main-nav {
   position: relative;
   z-index: 5;
+  // display: none;
 
   width: 100%;
 
@@ -8,9 +9,12 @@
     display: flex;
     justify-content: space-between;
     width: 440px;
-
+    // Зачем ограничиваешь? либо min-height, лучше откорректировать padding-top
+    height: 36px;
+    // лучше padding-top
+    margin-top: 42px;
+    // а можно блоку page-header__wrapper задать flex и space-between
     margin-right: 0;
-
     padding: 0;
   }
 
@@ -21,10 +25,11 @@
   }
 }
 
+// Добавляем кнопку на мобильном
 .main-nav__toggle {
   content: "";
   position: absolute;
-  top: -31px;
+  top: 31px;
   right: 21px;
 
   width: 24px;
@@ -57,6 +62,7 @@
   }
 }
 
+// Делаем сначала без js, т.е. меню открытое
 .main-nav__list {
   display: flex;
   flex-direction: column;
@@ -79,21 +85,25 @@
 .main-nav__item {
   width: auto;
   min-height: 66px;
+  padding-top: 22px;
+
+  font-weight: 500;
   font-size: 20px;
   line-height: 20px;
-  font-weight: 500;
-  text-transform: uppercase;
-  border-bottom: 1px solid $border-menu;
   text-align: center;
-  padding-top: 22px;
+  text-transform: uppercase;
+
+  border-bottom: 1px solid $border-menu;
 
   &:first-child {
     border-top: 1px solid $border-menu;
   }
 
   @media (min-width: $tablet-width) {
-    text-align: none;
     padding: 0;
+
+    text-align: none;
+
     border: none;
   }
 }

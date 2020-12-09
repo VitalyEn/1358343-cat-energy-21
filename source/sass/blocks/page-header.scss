@@ -4,6 +4,8 @@
   width: 100%;
 }
 
+// Добавила высоту,
+// добавила высоту
 .page-header__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -16,12 +18,13 @@
   display: flex;
   align-items: center;
   width: 100%;
-
+  // Минимальная высота
   min-height: 66px;
   padding-left: 20px;
 
   text-align: center;
-
+  // На мобильном бордера нет
+  // border-bottom: 1px solid $border-menu;
 
   @media (min-width: $tablet-width) {
     width: 174px;
@@ -38,6 +41,7 @@
   }
 }
 
+// Изменила размер картинки
 .page-header__logo img {
   width: 191px;
   height: 38px;
