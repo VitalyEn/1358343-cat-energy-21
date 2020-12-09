@@ -1,7 +1,28 @@
 .page-footer {
+  position: relative;
   padding-top: 14px;
-
   background-color: $background-grey;
+}
+
+.page-footer__contacts {
+  min-height: 114px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    min-height: 201px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    height: 201px;
+    position: absolute;
+    left: 110px;
+    top: 95px;
+    background-color: $main-background;
+  }
 }
 
 .page-footer__map {
@@ -22,19 +43,6 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-  }
-}
-
-.social__title {
-  display: block;
-  padding-top: 39px;
-  padding-bottom: 32px;
-  margin: auto;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    margin: 0;
   }
 }
 
