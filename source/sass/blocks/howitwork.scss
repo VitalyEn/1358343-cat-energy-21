@@ -2,6 +2,10 @@
   padding-bottom: 23px;
 
   background-color: $main-background;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $border-menu;
+  }
 }
 
 // .howitwork__wrapper {
@@ -50,8 +54,10 @@
   color: $text-color;
 
   @media (min-width: $tablet-width) {
-    width: 250px;
-    margin-right: 153px;
+    min-height: 280px;
+
+    padding: 0;
+    padding-top: 151px;
   }
 }
 
@@ -67,6 +73,64 @@
   background-color: $background-button;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    margin-top: 40px;
+  }
+}
+
+.howitwork__item--green {
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/1.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-right: 153px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.howitwork__item--box {
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/2.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-right: 79px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.howitwork__item--meal {
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/3.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-right: 137px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.howitwork__item--time {
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/4.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-right: 79px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .howitwork__item--green::before {
