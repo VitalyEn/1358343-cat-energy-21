@@ -1,6 +1,5 @@
 .page-footer {
   position: relative;
-  padding-top: 14px;
   background-color: $background-grey;
 }
 
@@ -10,6 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: $main-background;
 
   @media (min-width: $tablet-width) {
     min-height: 201px;
