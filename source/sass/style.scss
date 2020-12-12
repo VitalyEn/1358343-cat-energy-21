@@ -1,26 +1,28 @@
 //Global
-@import "source/sass/global/variables.scss";
-//@import "source/sass/global/normalize.scss";
-@import "source/sass/global/fonts.scss";
-@import "source/sass/global/common.scss";
+@import "global/variables.scss";
+//@import "global/normalize.scss";
+@import "global/fonts.scss";
+@import "global/common.scss";
 //blocks
-@import "source/sass/blocks/page-body.scss";
-@import "source/sass/blocks/page-header.scss";
-@import "source/sass/blocks/main-nav.scss";
-@import "source/sass/blocks/page-footer.scss";
-@import "source/sass/blocks/button.scss";
+@import "blocks/page-body.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/button.scss";
+@import "blocks/social.scss";
 //Index
-@import "source/sass/blocks/programs.scss";
-@import "source/sass/blocks/howitwork.scss";
-@import "source/sass/blocks/example.scss";
+@import "blocks/programs.scss";
+@import "blocks/howitwork.scss";
+@import "blocks/example.scss";
+@import "blocks/contacts.scss";
 //Form
-@import "source/sass/blocks/form.scss";
-@import "source/sass/blocks/data.scss";
-@import "source/sass/blocks/programs-choice.scss";
-@import "source/sass/blocks/client-contacts.scss";
-@import "source/sass/blocks/comments.scss";
-@import "source/sass/blocks/extend.scss";
+@import "blocks/form.scss";
+@import "blocks/data.scss";
+@import "blocks/programs-choice.scss";
+@import "blocks/client-contacts.scss";
+@import "blocks/comments.scss";
+@import "blocks/extend.scss";
 //Catalog
-@import "source/sass/blocks/catalog.scss";
-@import "source/sass/blocks/data-list.scss";
-@import "source/sass/blocks/catalog-extra.scss";
+@import "blocks/catalog.scss";
+@import "blocks/data-list.scss";
+@import "blocks/catalog-extra.scss";

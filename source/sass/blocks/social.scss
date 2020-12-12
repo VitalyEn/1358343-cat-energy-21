@@ -1,0 +1,42 @@
+.social {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 21px;
+  border-bottom: 1px solid $border-programs;
+  border-top: 1px solid $border-programs;
+
+  @media (min-width: $tablet-width) {
+    width: 129px;
+    padding-top: 33px;
+    border: none;
+    margin: 0;
+  }
+}
+
+.social__title {
+  display: block;
+  padding-top: 39px;
+  padding-bottom: 32px;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0;
+  }
+}
+
+.social__list {
+  width: 130px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+// .social__title {
+//   min-width: 320px;
+// }

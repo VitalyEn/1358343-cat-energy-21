@@ -1,38 +1,121 @@
+.main-nav {
+  position: relative;
+  z-index: 5;
+  width: 100%;
 
-@media (min-width: $tablet-width) {
-  .main-nav__wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 708px;
-    margin: 0 auto;
-  }
-
-  .main-nav__toggle {
-    display: none;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main-nav__wrapper {
-    width: 1220px;
-  }
-}
-
-.main-nav__item {
-  font-size: 20px;
-  line-height: 20px;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-.main-nav__list {
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     width: 440px;
+    height: 36px;
+
+    margin-top: 42px;
+
+    margin-right: 0;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 478px;
+    height: 40px;
+    margin-top: 69px;
+  }
+}
+
+.main-nav__toggle {
+  content: "";
+  position: absolute;
+  top: -31px;
+  right: 21px;
+
+  width: 24px;
+  height: 1.5px;
+
+  background-color: $menu-color;
+  border: none;
+  transform: rotate(45deg);
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 24px;
+    height: 1.5px;
+
+    background-color: $menu-color;
+    transform: rotate(-90deg);
+  }
+
+  &::after {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 478px;
+  }
+}
+
+.main-nav__item {
+  width: auto;
+  min-height: 66px;
+  padding-top: 22px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+
+  border-bottom: 1px solid $border-menu;
+
+  &:first-child {
+    border-top: 1px solid $border-menu;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: none;
+
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.main-nav__item a {
+  width: auto;
+  margin: 0;
+
+  color: $menu-color;
+  letter-spacing: 0.7px;
+
+  @media (min-width: $desktop-width) {
+    color: $button-color;
   }
 }
