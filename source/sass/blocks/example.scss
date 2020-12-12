@@ -86,7 +86,8 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
-
+  min-height: auto;
+  margin-bottom: 0;
   border: none;
 
   @media (min-width: $tablet-width) {
@@ -151,7 +152,7 @@
 .example__live {
   display: block;
   max-width: 690px;
-  margin-top: 59px;
+  padding-top: 59px;
 
   @media (min-width: $desktop-width) {
     position: absolute;

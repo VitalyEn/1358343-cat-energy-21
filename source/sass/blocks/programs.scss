@@ -89,6 +89,12 @@
   @media (min-width: $tablet-width) {
     order: 2;
   }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+  }
 }
 
 .programs__header-title {
@@ -121,7 +127,6 @@
 
   font-size: 14px;
   line-height: 14px;
-  // по середине
   text-align: center;
   color: $button-color;
   text-transform: uppercase;
@@ -281,18 +286,19 @@
 
 .programs__item-description {
   // margin-right: 33px;
-  margin-bottom: 22px;
+  padding-bottom: 22px;
   // margin-left: 20px;
 
   font-size: 14px;
   line-height: 18px;
   font-family: "Arial", sans-serif;
   color: $text-color;
+  border-bottom: 1px solid $border-programs;
 
   @media (min-width: $tablet-width) {
     margin-right: 314px;
     margin-left: 52px;
-
+    border: none;
     font-size: 16px;
     line-height: 24px;
   }
@@ -306,7 +312,7 @@
 .programs__item-link {
   position: relative;
 
-  display: inline-block;
+  //display: inline-block;
   // margin-left: 20px;
   padding-top: 20px;
 
@@ -315,7 +321,7 @@
   color: $menu-color;
   text-transform: uppercase;
 
-  border-top: 1px solid $border-programs;
+  //border-top: 1px solid $border-programs;
 
   @media (min-width: $tablet-width) {
     margin-top: 52px;
@@ -337,7 +343,7 @@
   content: "";
   position: absolute;
   right: -47px;
-
+  margin-top: 7px;
   width: 32px;
   height: 10px;
 
