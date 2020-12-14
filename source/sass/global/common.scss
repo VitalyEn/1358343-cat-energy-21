@@ -74,6 +74,7 @@ a {
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0;
     max-width: 1220px;
     margin: auto;
   }
