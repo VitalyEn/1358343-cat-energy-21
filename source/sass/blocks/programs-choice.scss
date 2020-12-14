@@ -1,10 +1,87 @@
+.programs-choice {
+  padding-top: 22px;
+  padding-bottom: 19px;
+  width: 100%;
+  border-bottom: 1px solid $border-programs;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $border-programs;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 568px;
+    width: auto;
+    height: 200px;
+  }
+}
+
+.programs-choice__item {
+  margin-bottom: 13px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+  }
+}
+
 .programs-choice__item label {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: $text-color;
+  padding-left: 45px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 88px;
+  }
 
   @media (min-width: $desktop-width) {
     min-width: 568px;
+  }
+}
+
+.programs-choice__input {
+
+  display: none;
+}
+
+.programs-choice__input + label::before {
+  content: "";
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background-color: $main-background;
+  position: absolute;
+  left: 0;
+  top: -3px;
+  border: 1px solid $border-programs;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    height: 40px;
+    width: 40px;
+    left: 28px;
+  }
+}
+
+.programs-choice__input--checked + label::after {
+  content: "";
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  background-color: $background-button;
+  position: absolute;
+  left: 8px;
+  top: 4px;
+  border: 1px solid $border-programs;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    height: 18px;
+    width: 18px;
+    left: 39px;
+    top: 8px;
   }
 }

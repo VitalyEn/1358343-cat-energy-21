@@ -63,13 +63,16 @@
         <legend class="visually-hidden">Выбор программы</legend>
         <ul class="programs-choice__list list-style">
           <li class="programs-choice__item">
-            <label><input class="programs-choice__input" name="program" type="radio" value="lower" checked>Похудение</label>
+            <input class="programs-choice__input programs-choice__input--checked" name="program" type="radio" value="lower" id="programs-choice__input--lower" checked>
+            <label for="programs-choice__input--lower">Похудение</label>
           </li>
           <li class="programs-choice__item">
-            <label><input class="programs-choice__input" name="program" type="radio" value="higher">Набор массы</label>
+            <input class="programs-choice__input" name="program" type="radio" value="higher" id="programs-choice__input--higher">
+            <label for="programs-choice__input--higher">Набор массы</label>
           </li>
           <li class="programs-choice__item">
-            <label><input class="programs-choice__input" name="program" type="radio" value="unknown">Не знаю (Нужен ваш совет)</label>
+            <input class="programs-choice__input" name="program" type="radio" value="unknown" id="programs-choice__input--unknown">
+            <label for="programs-choice__input--unknown">Не знаю (Нужен ваш совет)</label>
           </li>
         </ul>
       </div>
