@@ -1,5 +1,15 @@
-.form h1 {
+.form__title {
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+
+  margin: 0;
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+
+    padding-top: 65px;
+  }
 }

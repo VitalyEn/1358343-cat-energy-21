@@ -3,4 +3,8 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $text-color;
+
+  @media (min-width: $desktop-width) {
+    min-width: 568px;
+  }
 }
