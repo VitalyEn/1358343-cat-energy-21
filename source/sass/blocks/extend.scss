@@ -45,6 +45,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
 }
 
 .extend__item {
@@ -63,7 +68,7 @@
 }
 
 .extend__item:last-child {
-  margin-bottom: 34px;
+  margin-bottom: 0;
 }
 
 .extend__input {

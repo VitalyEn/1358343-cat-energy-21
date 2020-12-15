@@ -1,0 +1,36 @@
+.form-button {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+  }
+}
+
+.form-button__button {
+  @media (min-width: $desktop-width) {
+    min-width: 568px;
+  }
+}
+
+.form-button__text {
+  width: 100%;
+  text-align: center;
+  margin-top: 21px;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    padding-bottom: 17px;
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
