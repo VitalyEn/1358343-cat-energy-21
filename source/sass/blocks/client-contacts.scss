@@ -35,6 +35,10 @@
   width: 100%;
 }
 
+.client-contacts__item:last-child {
+  margin-bottom: 0;
+}
+
 .client-contacts__item {
   display: grid;
   width: 100%;
