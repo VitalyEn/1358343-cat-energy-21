@@ -1,3 +1,11 @@
+.contacts--form {
+  background-color: $background-grey;
+
+  @media (min-width: $desktop-width) {
+    background-color: $main-background;
+  }
+}
+
 .contacts__slogan {
   font-size: 16px;
   line-height: 18px;

@@ -119,3 +119,9 @@
     color: $button-color;
   }
 }
+
+.main-nav__item--form a {
+  @media (min-width: $desktop-width) {
+    color: $menu-color;
+  }
+}

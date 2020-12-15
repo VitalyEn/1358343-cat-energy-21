@@ -1,20 +1,110 @@
+.form .extend {
+  border-top: 2px solid $background-button;
+}
+
+.extend {
+  margin-top: 23px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 65px;
+  }
+}
+
 .extend__title {
   font-size: 24px;
   line-height: 26px;
+  width: 50%;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    width: auto;
+    padding-right: 42px;
+    padding-bottom: 0;
+    margin-bottom: 57px;
+  }
 }
 
 .extend__label {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  padding-left: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 49px;
+  }
 }
 
 .extend__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 100%;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
 }
 
 .extend__item {
-  min-width: 280px;
+  width: 100%;
+  margin-bottom: 13px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 25%;
+  }
+}
+
+.extend__item:last-child {
+  margin-bottom: 0;
+}
+
+.extend__input {
+  display: none;
+}
+
+.extend__input + label::before {
+  content: "";
+  display: inline-block;
+  height: 26px;
+  width: 26px;
+  background-color: $main-background;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid $border-programs;
+
+  @media (min-width: $tablet-width) {
+    height: 40px;
+    width: 40px;
+    top: -5px;
+  }
+}
+
+.extend__input--checked + label::after {
+  content: "";
+  display: inline-block;
+  height: 14px;
+  width: 18px;
+  background-image: url("../img/bird.svg");
+  position: absolute;
+  left: 5px;
+  top: 5px;
+
+  @media (min-width: $tablet-width) {
+    left: 12px;
+    top: 10px;
+  }
 }
