@@ -32,6 +32,12 @@
   line-height: 18px;
   text-transform: uppercase;
   padding-left: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 49px;
+  }
 }
 
 .extend__list {
@@ -45,6 +51,15 @@
   width: 100%;
   margin-bottom: 13px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 25%;
+  }
 }
 
 .extend__item:last-child {
@@ -69,7 +84,7 @@
   @media (min-width: $tablet-width) {
     height: 40px;
     width: 40px;
-    left: 28px;
+    top: -5px;
   }
 }
 
@@ -82,4 +97,9 @@
   position: absolute;
   left: 5px;
   top: 5px;
+
+  @media (min-width: $tablet-width) {
+    left: 12px;
+    top: 10px;
+  }
 }
