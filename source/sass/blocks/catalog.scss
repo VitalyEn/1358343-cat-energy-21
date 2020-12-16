@@ -17,6 +17,11 @@
     padding-bottom: 83px;
     border: none;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 74px;
+    padding-bottom: 165px;
+  }
 }
 
 .catalog__list {
@@ -55,6 +60,12 @@
     width: 168px;
     height: 200px;
     margin-top: -73px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 172px;
+    height: 196px;
+    margin-top: -80px;
   }
 }
 
@@ -101,6 +112,10 @@
     font-size: 16px;
     line-height: 16px;
     width: 249px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 173px;
   }
 }
 
@@ -163,8 +178,18 @@
   }
 }
 
+.item-button {
+  @media (min-width: $desktop-width) {
+    width: 168px;
+  }
+}
+
 .more-button {
   font-family: "Oswald", sans-serif;
   background-color: $background-grey;
   color: $text-color;
+
+  @media (min-width: $desktop-width) {
+    width: 168px;
+  }
 }
