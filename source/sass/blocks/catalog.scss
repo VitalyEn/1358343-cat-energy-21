@@ -9,6 +9,14 @@
   padding-bottom: 41px;
   margin: 0;
   border-bottom: 1px solid $border-menu;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 64px;
+    padding-bottom: 83px;
+    border: none;
+  }
 }
 
 .catalog__list {
@@ -27,6 +35,14 @@
 
   @media (min-width: $tablet-width) {
     width: 324px;
+    min-height: 430px;
+    background-color: $background-grey;
+    border: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    padding-bottom: 40px;
+    margin-bottom: 140px;
   }
 
   @media (min-width: $desktop-width) {
@@ -34,14 +50,42 @@
   }
 }
 
+.catalog__img img {
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    height: 200px;
+    margin-top: -73px;
+  }
+}
+
 .catalog__item-title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $menu-color;
   width: 50%;
   margin-top: 0;
   margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    width: 174px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    margin-bottom: 21px;
+  }
 }
 
 .catalog__descript {
   padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 42px;
+  }
 }
 
 .data-list {
@@ -52,6 +96,12 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 6px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+    width: 249px;
+  }
 }
 
 .data-list__item p {
@@ -68,9 +118,17 @@
   background-image: url("../img/plus.svg");
   background-repeat: no-repeat;
   background-position: center top;
+
+  @media (min-width: $tablet-width) {
+    background-color: $main-background;
+    border: 2px solid $background-grey;
+    margin-top: 0;
+    background-position: 50% 52px;
+    background-size: 60px 60px;
+    padding-top: 161px;
+  }
 }
 
-.catalog__item-title,
 .catalog__more-first {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -78,6 +136,15 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $menu-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    width: 134px;
+    margin: 0;
+    margin-bottom: 23px;
+  }
 }
 
 .catalog__more-second {
@@ -85,6 +152,15 @@
   font-size: 12px;
   line-height: 16px;
   color: $text-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    width: 167px;
+    margin: 0;
+    margin-bottom: 87px;
+  }
 }
 
 .more-button {
