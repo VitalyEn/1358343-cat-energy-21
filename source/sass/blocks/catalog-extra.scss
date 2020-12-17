@@ -11,6 +11,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -64,6 +65,10 @@
     background-image: url("../img/gift.png");
     width: 245px;
     height: 289px;
+    flex-direction: column;
+    margin-top: 0;
+    padding-top: 56px;
+    padding-bottom: 42px;
   }
 }
 
@@ -129,10 +134,15 @@
     font-size: 16px;
     line-height: 20px;
     width: auto;
+
+    span {
+      margin-left: 49px;
+    }
   }
 
-  span {
-    margin-left: 49px;
+  @media (min-width: $desktop-width) {
+    width: 288px;
+    margin-left: auto;
   }
 }
 
@@ -140,5 +150,11 @@
   @media (min-width: $tablet-width) {
     width: 82%;
     margin: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+    margin-right: 0;
+    margin-left: 38px;
   }
 }
