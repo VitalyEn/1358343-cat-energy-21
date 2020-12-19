@@ -70,20 +70,36 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-mobile@2x.png");
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/index-background-desktop.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index-background-desktop@2x.png");
+      }
+    }
   }
 }
 
 .programs__header img {
-  max-width: 280px;
+  //max-width: 280px;
 
   @media (min-width: $tablet-width) {
     order: 2;
+    width: 709px;
+    height: 609px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
     left: 50%;
     top: 30%;
+    width: 552px;
+    height: 499px;
   }
 }
 
