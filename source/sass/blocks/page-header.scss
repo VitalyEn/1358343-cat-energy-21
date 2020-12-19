@@ -17,7 +17,6 @@
   align-items: center;
   width: 100%;
   min-height: 66px;
-  padding-left: 20px;
 
   text-align: center;
 
@@ -25,7 +24,6 @@
     width: 174px;
     height: 52px;
     margin-top: 24px;
-
     border: none;
   }
 
@@ -33,20 +31,6 @@
     width: 202px;
     height: 59px;
     margin-top: 53px;
-  }
-}
-
-.page-header__logo img {
-  width: 191px;
-  height: 38px;
-  margin: 0;
-
-  @media (min-width: $tablet-width) {
-    height: 51px;
-  }
-
-  @media (min-width: $desktop-width) {
-    height: 59px;
   }
 }
 
