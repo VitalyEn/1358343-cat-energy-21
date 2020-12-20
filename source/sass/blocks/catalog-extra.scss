@@ -39,12 +39,17 @@
 
 .catalog-extra__bonus {
   background-color: $background-cat;
-  background-image: url("../img/gift.png");
+  background-image: url("../img/gift-photo-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
   height: 289px;
   margin-top: 39px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    background-size: auto 289px;
+  }
 
   display: flex;
   flex-direction: column;
@@ -53,22 +58,32 @@
   padding-top: 58px;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/gift-tablet.png");
+    background-image: url("../img/gift-photo-tablet.jpg");
     height: 200px;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     padding: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.png");
+      background-size: auto 200px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/gift.png");
+    background-image: url("../img/gift-photo-desktop.jpg");
     width: 245px;
     height: 289px;
     flex-direction: column;
     margin-top: 0;
     padding-top: 56px;
     padding-bottom: 42px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.png");
+      background-size: 245px 289px;
+    }
   }
 }
 
