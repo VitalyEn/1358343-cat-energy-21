@@ -13,19 +13,6 @@
   }
 }
 
-.social__title {
-  display: block;
-  padding-top: 39px;
-  padding-bottom: 32px;
-  margin: auto;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    margin: 0;
-  }
-}
-
 .social__list {
   width: 130px;
   margin: auto;

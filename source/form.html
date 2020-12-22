@@ -67,16 +67,16 @@
         <legend class="visually-hidden">Выбор программы</legend>
         <ul class="programs-choice__list list-style">
           <li class="programs-choice__item">
-            <input class="programs-choice__input programs-choice__input--checked" name="program" type="radio" value="lower" id="programs-choice__input--lower" checked>
-            <label for="programs-choice__input--lower">Похудение</label>
+            <input class="programs-choice__input programs-choice__input--checked" name="program" type="radio" value="lower" id="input-lower" checked>
+            <label for="input-lower">Похудение</label>
           </li>
           <li class="programs-choice__item">
-            <input class="programs-choice__input" name="program" type="radio" value="higher" id="programs-choice__input--higher">
-            <label for="programs-choice__input--higher">Набор массы</label>
+            <input class="programs-choice__input" name="program" type="radio" value="higher" id="input-higher">
+            <label for="input-higher">Набор массы</label>
           </li>
           <li class="programs-choice__item">
-            <input class="programs-choice__input" name="program" type="radio" value="unknown" id="programs-choice__input--unknown">
-            <label for="programs-choice__input--unknown">Не знаю (Нужен ваш совет)</label>
+            <input class="programs-choice__input" name="program" type="radio" value="unknown" id="input-unknown">
+            <label for="input-unknown">Не знаю (Нужен ваш совет)</label>
           </li>
         </ul>
       </div>
@@ -97,9 +97,9 @@
 
       <fieldset class="comments">
         <legend class="comments__title">Комментарий</legend>
-        <label>
-          <input class="comments__input" type="text" name="comment" value="Расскажите обо всех повадках кота">
-        </label>
+          <textarea class="comments__input">
+            Расскажите обо всех повадках кота
+          </textarea>
       </fieldset>
 
       <fieldset class="extend">
@@ -114,7 +114,7 @@
             <label class="extend__label" for="water">Питьевая вода</label>
           </li>
           <li class="extend__item">
-            <input class="extend__input" type="checkbox" name="Milk" id="Milk">
+            <input class="extend__input" type="checkbox" name="milk" id="milk">
             <label class="extend__label" for="Milk">Молоко</label>
           </li>
           <li class="extend__item">
@@ -143,7 +143,6 @@
     <div class="page-footer__links wrapper">
       <a class="social__title" aria-label="CAT ENERGY">
         <img src="/img/catenergy.svg" alt="CAT ENERGY" width="128" height="24">
-        </svg>
       </a>
       <div class="page-footer__social social">
         <ul class="social__list list-style">
