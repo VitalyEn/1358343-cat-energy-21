@@ -46,6 +46,19 @@
   }
 }
 
+.page-footer__title {
+  display: block;
+  padding-top: 39px;
+  padding-bottom: 32px;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0;
+  }
+}
+
 .page-footer__copyright {
   width: 100%;
 
@@ -77,6 +90,6 @@
 .page-footer__htmlacademy {
   font-size: 16px;
   line-height: 19px;
-  font-family: "Arial", sans-serif;
+  font-family: $font-family-other;
   color: $text-color;
 }

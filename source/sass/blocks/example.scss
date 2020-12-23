@@ -50,7 +50,7 @@
 
   font-size: 14px;
   line-height: 18px;
-  font-family: "Arial", sans-serif;
+  font-family: $font-family-other;
   color: $text-color;
 }
 
@@ -70,7 +70,7 @@
 
   text-align: center;
 
-  border: 1px solid #cdcdcd;
+  border: 1px solid $range-color;
   border-radius: 3px;
 
   @media (min-width: $tablet-width) {
@@ -128,7 +128,7 @@
 
   font-size: 12px;
   line-height: 12px;
-  font-family: "Arial", sans-serif;
+  font-family: $font-family-other;
   color: $text-color;
 
   background-color: $background-dark-grey;
@@ -145,7 +145,7 @@
 .example__item-last .example__text {
   font-size: 14px;
   line-height: 20px;
-  font-family: "Oswald", sans-serif;
+  font-family: $font-family;
   color: $menu-color;
 }
 
@@ -180,7 +180,7 @@
   width: 84px;
   height: 14px;
   background-color: $main-background;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $range-color;
   border-radius: 6px;
 
   @media (min-width: $tablet-width) {
