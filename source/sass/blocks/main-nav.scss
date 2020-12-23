@@ -23,39 +23,36 @@
 }
 
 .main-nav__toggle {
-  content: "";
   position: absolute;
-  top: -31px;
-  right: 21px;
+  top: -40px;
+  right: 20px;
 
-  width: 24px;
-  height: 1.5px;
-
-  background-color: $menu-color;
+  background-color: $main-background;
   border: none;
-  transform: rotate(45deg);
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-
-    width: 24px;
-    height: 1.5px;
-
-    background-color: $menu-color;
-    transform: rotate(-90deg);
-  }
-
   &::after {
     display: none;
   }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 1.5px;
+  background-color: $menu-color;
+  box-shadow: 0 8px 0 0 $menu-color, 0 16px 0 0 $menu-color;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: fade(#ffffff, 30%);
+  box-shadow:
+    0 8px 0 0 fade(#ffffff, 30%),
+    0 16px 0 0 fade(#ffffff, 30%);
 }
 
 .main-nav__list {
