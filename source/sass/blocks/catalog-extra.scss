@@ -93,7 +93,7 @@
 }
 
 .catalog-extra__bonus-text {
-  font-family: "Arial", sans-serif;
+  font-family: $font-family-other;
   font-size: 16px;
   line-height: 20px;
   color: $button-color;
@@ -137,7 +137,7 @@
 }
 
 .catalog-extra__descript {
-  font-family: "Arial", sans-serif;
+  font-family: $font-family-other;
   font-size: 14px;
   line-height: 14px;
   color: $text-color;

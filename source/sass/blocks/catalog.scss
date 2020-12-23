@@ -77,7 +77,7 @@
 }
 
 .catalog__item-title {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-family;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -153,7 +153,7 @@
 }
 
 .catalog__more-first {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-family;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -171,7 +171,7 @@
 }
 
 .catalog__more-second {
-  font-family: "Arial", sans-serif;
+  font-family: $font-family-other;
   font-size: 12px;
   line-height: 16px;
   color: $text-color;
@@ -193,7 +193,7 @@
 }
 
 .more-button {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-family;
   background-color: $background-grey;
   color: $text-color;
 
