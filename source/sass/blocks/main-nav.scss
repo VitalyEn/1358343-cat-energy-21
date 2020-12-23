@@ -23,6 +23,8 @@
 }
 
 .main-nav__toggle {
+  width: 24px;
+  height: 16px;
   position: absolute;
   top: -40px;
   right: 20px;
@@ -38,6 +40,8 @@
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
+  top: 0;
+  right: 0;
   width: 24px;
   height: 1.5px;
   background-color: $menu-color;
@@ -66,6 +70,8 @@
   &::after {
     content: "";
     position: absolute;
+    top: 5px;
+    right: 0;
     width: 25px;
     height: 2px;
     background-color: $menu-color;
