@@ -11,6 +11,7 @@ const uglify = require("gulp-uglify");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
+const del = require("del");
 const sync = require("browser-sync").create();
 
 // Styles
@@ -87,6 +88,28 @@ const sprite = () => {
 
 exports.sprite = sprite;
 
+// Copy
+
+const copy = (done) => {
+  gulp.src([
+    "source/fonts/*.{woff2,woff}",
+    "source/*.ico",
+    "source/img/**/*.{jpg,png,svg}",
+  ], {
+    base: "source"
+  })
+    .pipe(gulp.dest("build"))
+  done();
+}
+
+exports.copy = copy;
+
+// Clean
+
+const clean = () => {
+  return del("build");
+};
+
 // Server
 
 const server = (done) => {
@@ -113,19 +136,32 @@ const watcher = () => {
 // Build
 
 const build = gulp.series(
-  //clean,
+  clean,
   gulp.parallel(
     styles,
     html,
     scripts,
     sprite,
-    //copy,
+    copy,
     images,
     createWebp
   ));
 
 exports.build = build;
 
+// Default
+
 exports.default = gulp.series(
-  styles, server, watcher
-);
+  clean,
+  gulp.parallel(
+    styles,
+    html,
+    scripts,
+    sprite,
+    copy,
+    createWebp
+  ),
+  gulp.series(
+    server,
+    watcher
+  ));
