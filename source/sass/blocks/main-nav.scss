@@ -124,7 +124,9 @@
   border-bottom: 1px solid $border-menu;
 
   &:first-child {
-    border-top: 1px solid $border-menu;
+    @media (max-width: $mobile-width-only) {
+      border-top: 1px solid $border-menu;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -139,6 +141,26 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
+    border-top: none;
+  }
+}
+
+.main-nav__item--form + .main-nav__item--active {
+  @media (min-width: $tablet-width) {
+    min-height: 0;
+    border-bottom: 2px solid $background-button;
+  }
+}
+
+.main-nav__item--active {
+  @media (min-width: $tablet-width) {
+    min-height: 0;
+    border-bottom: 2px solid $background-button;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 0;
+    border-bottom: 2px solid $button-color;
   }
 }
 
@@ -152,6 +174,15 @@
   @media (min-width: $desktop-width) {
     color: $button-color;
   }
+}
+
+.main-nav__item a:hover {
+  border: none;
+  opacity: 0.6;
+}
+
+.main-nav__item a:active {
+  opacity: 0.3;
 }
 
 .main-nav__item--form a {

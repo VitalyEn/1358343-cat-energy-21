@@ -34,6 +34,15 @@
   }
 }
 
+.page-header__logo:hover {
+  opacity: 0.8;
+  border: none;
+}
+
+.page-header__logo:active {
+  opacity: 0.6;
+}
+
 .page-header__logo svg {
   align-self: center;
   margin: auto;
