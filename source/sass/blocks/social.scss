@@ -24,6 +24,19 @@
   }
 }
 
+.social__link:hover svg {
+  stroke: $background-button;
+}
+
+.copyright__link:active path {
+  fill: $background-button;
+}
+
+.social__link:active svg,
+.copyright__link:active p,
+.copyright__link:active svg {
+  opacity: 0.3;
+}
 // .social__title {
 //   min-width: 320px;
 // }

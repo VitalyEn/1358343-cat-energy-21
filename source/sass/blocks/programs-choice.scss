@@ -66,6 +66,18 @@
   }
 }
 
+.programs-choice__input:hover + label:hover::before {
+  border-color: $radio-hover;
+}
+
+.programs-choice__input:hover + label:active::before {
+  opacity: 0.3;
+}
+
+.programs-choice__item label:active {
+  opacity: 0.3;
+}
+
 .programs-choice__input--checked + label::after {
   content: "";
   display: inline-block;

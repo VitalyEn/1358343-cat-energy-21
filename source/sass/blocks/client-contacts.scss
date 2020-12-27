@@ -75,6 +75,18 @@
   }
 }
 
+.client-contacts__input:hover {
+  border-color: $border-hover;
+}
+
+.client-contacts__input:focus {
+  border: 2px solid $text-color;
+}
+
+.client-contacts__input:invalid {
+  border: 2px solid $border-error;
+}
+
 .client-contacts__label::before {
   content: "";
   position: absolute;
