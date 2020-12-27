@@ -19,3 +19,11 @@
     font-size: 20px;
   }
 }
+
+.button:hover {
+  background-color: $background-button-hover;
+}
+
+.button:active {
+  color: $button-color-active;
+}

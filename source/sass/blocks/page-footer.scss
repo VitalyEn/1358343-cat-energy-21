@@ -59,6 +59,14 @@
   }
 }
 
+.page-footer__title:hover {
+  opacity: 0.8;
+}
+
+.page-footer__title:active {
+  opacity: 0.6;
+}
+
 .page-footer__copyright {
   width: 100%;
 

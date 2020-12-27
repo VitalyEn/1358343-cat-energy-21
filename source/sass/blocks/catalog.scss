@@ -201,3 +201,11 @@
     width: 168px;
   }
 }
+
+.more-button:hover {
+  background-color: $background-grey-hover;
+}
+
+.more-button:active {
+  color: $button-color-active;
+}

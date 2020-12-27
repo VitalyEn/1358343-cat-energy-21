@@ -78,3 +78,15 @@
   border: 1px solid $border-menu;
   padding-left: 15px;
 }
+
+.data__input:hover {
+  border-color: $border-hover;
+}
+
+.data__input:focus {
+  border: 2px solid $text-color;
+}
+
+.data__input:invalid {
+  border: 2px solid $border-error;
+}
