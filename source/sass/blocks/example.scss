@@ -1,5 +1,5 @@
 .example {
-  padding-top: 26px;
+  padding-top: 22px;
   padding-bottom: 32px;
 
   background-color: $background-dark-grey;
@@ -58,7 +58,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 11px;
+  padding-top: 15px;
 }
 
 .example__item {
@@ -151,8 +151,9 @@
 
 .example__live {
   display: block;
-  max-width: 690px;
-  padding-top: 59px;
+  //max-width: 690px;
+  margin: auto;
+  padding-top: 65px;
 
   @media (min-width: $desktop-width) {
     position: absolute;

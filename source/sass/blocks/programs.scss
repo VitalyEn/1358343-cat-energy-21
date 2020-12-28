@@ -129,7 +129,7 @@
 
 .programs__intro {
   margin-top: 0;
-  margin-bottom: 29px;
+  margin-bottom: 32px;
 
   font-size: 14px;
   line-height: 14px;
@@ -163,6 +163,8 @@
   color: $button-color;
   text-transform: uppercase;
   margin: auto;
+  padding-top: 11px;
+  padding-bottom: 12px;
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
@@ -180,7 +182,7 @@
   // min-height: 266px;
   // margin-top: 20px;
   margin-bottom: 17px;
-  padding: 0 20px 17px;
+  padding: 0 20px 25px;
 
   background-color: $background-grey;
 
