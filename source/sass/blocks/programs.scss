@@ -362,13 +362,14 @@
   border: none;
 
   &::after {
+    right: -55px;
     width: 32px;
     background-size: 32px 10px;
   }
 }
 
 .programs__item-link:active {
-  opacity: 0.6;
+  opacity: 0.3;
 }
 
 .programs__item-link:visited {

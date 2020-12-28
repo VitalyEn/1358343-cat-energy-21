@@ -78,7 +78,7 @@
   opacity: 0.3;
 }
 
-.programs-choice__input--checked + label::after {
+.programs-choice__input:checked + label::after {
   content: "";
   display: inline-block;
   height: 14px;

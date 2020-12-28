@@ -105,7 +105,7 @@
   opacity: 0.3;
 }
 
-.extend__input--checked + label::after {
+.extend__input:checked + label::after {
   content: "";
   display: inline-block;
   height: 14px;
