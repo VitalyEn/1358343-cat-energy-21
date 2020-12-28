@@ -24,6 +24,10 @@
   }
 }
 
+.social__link--facebook {
+  stroke: $stroke;
+}
+
 .social__link:hover svg {
   stroke: $background-button;
 }
