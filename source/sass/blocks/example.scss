@@ -207,19 +207,36 @@
     border-radius: 50%;
     border: 13px solid $main-background;
     background-color: $background-button;
-    box-shadow: 0 1px 1px 0 $shadow;
+    box-shadow: 0 1px 3px $shadow;
     left: 197px;
     top: -15px;
+
+    &:hover {
+      box-shadow: 0 2px 4px $shadow;
+    }
+
+    &:active {
+      box-shadow: 0 0 0 1px $background-button, 0 3px 5px $shadow;
+    }
   }
 }
 
 .example__range-text {
   padding: 0 17px;
-
+  border-bottom: 1px dotted $border-menu;
   text-transform: uppercase;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  &:hover {
+    border-bottom: 1px solid $border-menu;
+  }
+
+  &:active {
+    border: none;
   }
 }
