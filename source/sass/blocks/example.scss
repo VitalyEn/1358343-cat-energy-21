@@ -5,6 +5,8 @@
   background-color: $background-dark-grey;
 
   @media (min-width: $tablet-width) {
+    padding-top: 43px;
+    padding-bottom: 70px;
     background-color: $main-background;
   }
 
@@ -25,6 +27,10 @@
 
 .example__block {
   padding-top: 19px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 48px;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -52,6 +58,11 @@
   line-height: 18px;
   font-family: $font-family-other;
   color: $text-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .example__list {
@@ -59,6 +70,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 37px;
+    justify-content: flex-start;
+  }
 }
 
 .example__item {
@@ -76,6 +92,7 @@
   @media (min-width: $tablet-width) {
     width: 162px;
     min-height: 75px;
+    margin-right: 42px;
   }
 }
 
@@ -93,6 +110,8 @@
   @media (min-width: $tablet-width) {
     width: auto;
     font-size: 20px;
+    margin-right: 0;
+    margin-left: auto;
   }
 }
 
@@ -138,7 +157,8 @@
     font-size: 14px;
     line-height: 14px;
     width: 127px;
-    bottom: -20px;
+    bottom: -17px;
+    left: 10%;
   }
 }
 
@@ -171,6 +191,10 @@
   padding-top: 30px;
 
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .example__range input {
@@ -186,7 +210,7 @@
   border-radius: 6px;
 
   @media (min-width: $tablet-width) {
-    width: 478px;
+    width: 428px;
     height: 6px;
     background-color: $range-color;
   }
@@ -231,6 +255,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding: 0 22px;
   }
 
   &:hover {
