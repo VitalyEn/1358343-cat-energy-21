@@ -32,6 +32,10 @@
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
 
 .page-footer__links {
