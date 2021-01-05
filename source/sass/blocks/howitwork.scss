@@ -7,6 +7,10 @@
     padding-bottom: 10px;
     border-bottom: 1px solid $border-menu;
   }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
 }
 
 // .howitwork__wrapper {
