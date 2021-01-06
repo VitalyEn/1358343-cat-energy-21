@@ -1,5 +1,5 @@
 .howitwork {
-  padding-bottom: 23px;
+  padding-bottom: 22px;
 
   background-color: $main-background;
 
@@ -22,6 +22,7 @@
 
 .howitwork__list {
   padding-top: 35px;
+  padding-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     display: grid;

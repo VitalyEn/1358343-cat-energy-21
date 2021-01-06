@@ -1,5 +1,5 @@
 .example {
-  padding-top: 22px;
+  padding-top: 27px;
   padding-bottom: 32px;
 
   background-color: $background-dark-grey;
@@ -54,7 +54,7 @@
 // }
 
 .example__description {
-  padding-left: 1px;
+  //padding-left: 1px;
 
   font-size: 14px;
   line-height: 18px;
@@ -72,7 +72,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 15px;
+  padding-top: 11px;
 
   @media (min-width: $tablet-width) {
     padding-top: 37px;
@@ -139,7 +139,6 @@
   @media (min-width: $desktop-width) {
     position: static;
     margin-left: 63px;
-    margin-right: 40px;
   }
 }
 
@@ -193,7 +192,7 @@
   display: block;
   //max-width: 690px;
   margin: auto;
-  padding-top: 65px;
+  padding-top: 42px;
 
   @media (min-width: $desktop-width) {
     position: absolute;
@@ -201,6 +200,11 @@
     top: 0;
     right: 0;
   }
+}
+
+.example__live img {
+  width: 312px;
+  margin-left: -20px;
 }
 
 .example__range {
