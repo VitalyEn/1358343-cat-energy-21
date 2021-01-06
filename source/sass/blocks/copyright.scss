@@ -11,9 +11,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: auto;
-  margin-top: 22px;
-  margin-bottom: 22px;
+  margin: 13px auto;
+  //margin-top: 22px;
+  //margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     width: 163px;

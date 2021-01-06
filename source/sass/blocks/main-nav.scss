@@ -172,6 +172,7 @@
   letter-spacing: 0.7px;
 
   @media (min-width: $desktop-width) {
+    letter-spacing: normal;
     color: $button-color;
   }
 }
