@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 53px;
+    padding-top: 56px;
   }
 }
 
@@ -44,7 +44,7 @@
 .example__title {
   @media (min-width: $desktop-width) {
     width: 100%;
-    margin-bottom: 146px;
+    margin-bottom: 132px;
   }
 }
 // .example__title {
@@ -81,7 +81,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 70px;
+    padding-top: 54px;
   }
 }
 
@@ -125,9 +125,9 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    width: 100%;
+    width: auto;
     padding-left: 0;
-    padding-top: 40px;
+    padding-top: 37px;
   }
 }
 
@@ -140,7 +140,7 @@
 
   @media (min-width: $desktop-width) {
     position: static;
-    margin-left: 63px;
+    margin-right: 59px;
   }
 }
 
@@ -197,10 +197,10 @@
   padding-top: 42px;
 
   @media (min-width: $desktop-width) {
-    position: relative;
+    position: absolute;
     margin: 0;
-    top: 0;
-    right: 0;
+    top: -116px;
+    right: -41px;
   }
 }
 
@@ -229,6 +229,11 @@
     margin-top: -67px;
     padding-left: 0;
     padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -46px;
+    margin-left: 54px;
   }
 }
 

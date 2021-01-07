@@ -22,6 +22,10 @@
     max-width: 171px;
     margin-left: 41px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 76px;
+  }
 }
 
 .contacts__text {
@@ -41,6 +45,11 @@
     min-height: 80px;
     margin-right: 42px;
     text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 82px;
+    text-align: left;
   }
 }
 

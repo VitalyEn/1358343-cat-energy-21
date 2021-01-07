@@ -1,6 +1,10 @@
 .page-footer {
   position: relative;
   background-color: $background-grey;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 6px;
+  }
 }
 
 .page-footer__contacts {
