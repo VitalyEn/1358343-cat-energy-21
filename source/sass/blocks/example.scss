@@ -1,6 +1,6 @@
 .example {
-  padding-top: 27px;
-  padding-bottom: 32px;
+  padding-top: 28px;
+  padding-bottom: 33px;
 
   background-color: $background-dark-grey;
 
@@ -27,7 +27,7 @@
 }
 
 .example__block {
-  padding-top: 19px;
+  padding-top: 22px;
 
   @media (min-width: $tablet-width) {
     padding-top: 48px;
@@ -213,7 +213,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 30px;
+  padding-top: 31px;
+  padding-left: 4px;
 
   text-align: center;
 
@@ -248,7 +249,7 @@
   background-color: $background-button;
   border-radius: 6px;
   top: 3px;
-  left: 3px;
+  left: 4px;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
