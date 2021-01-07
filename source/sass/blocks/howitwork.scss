@@ -26,7 +26,8 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-
+    padding-top: 33px;
+    padding-bottom: 0;
     grid-template-columns: 1fr 1fr;
   }
 

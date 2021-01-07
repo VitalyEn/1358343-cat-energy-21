@@ -171,8 +171,11 @@
   color: $menu-color;
   letter-spacing: 0.7px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     letter-spacing: normal;
+  }
+
+  @media (min-width: $desktop-width) {
     color: $button-color;
   }
 }

@@ -5,7 +5,7 @@
   background-color: $background-dark-grey;
 
   @media (min-width: $tablet-width) {
-    padding-top: 43px;
+    padding-top: 42px;
     padding-bottom: 70px;
     background-color: $main-background;
   }
@@ -116,6 +116,7 @@
   border: none;
 
   @media (min-width: $tablet-width) {
+    padding-top: 12px;
     width: auto;
     font-size: 20px;
     margin-right: 0;
@@ -196,7 +197,7 @@
   padding-top: 42px;
 
   @media (min-width: $desktop-width) {
-    position: absolute;
+    position: relative;
     margin: 0;
     top: 0;
     right: 0;
@@ -206,6 +207,12 @@
 .example__live img {
   width: 312px;
   margin-left: -20px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    height: auto;
+    margin: 0;
+  }
 }
 
 .example__range {
@@ -219,6 +226,8 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    margin-top: -67px;
+    padding-left: 0;
     padding-top: 0;
   }
 }

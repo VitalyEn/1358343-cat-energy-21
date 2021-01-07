@@ -3,6 +3,10 @@
 
   color: $button-color;
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 13px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 60px;
   }
@@ -117,9 +121,9 @@
   @media (min-width: $tablet-width) {
     width: 450px;
     height: 120px;
-    margin-top: 55px;
+    margin-top: 56px;
     margin-bottom: 41px;
-    margin-left: 85px;
+    margin-left: 87px;
     font-size: 60px;
     line-height: 60px;
     text-align: left;
@@ -145,7 +149,7 @@
   @media (min-width: $tablet-width) {
     width: 283px;
     margin-bottom: 20px;
-    margin-left: 85px;
+    margin-left: 88px;
 
     font-size: 20px;
     line-height: 20px;
@@ -181,13 +185,13 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    margin-left: 85px;
+    margin-left: 82px;
 
     position: absolute;
-    top: 288px;
+    top: 286px;
     width: 244px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 17px;
+    padding-bottom: 17px;
   }
 
   @media (min-width: $desktop-width) {
@@ -341,9 +345,9 @@
     margin-right: 314px;
     margin-left: 52px;
     margin-top: 26px;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
 
-    min-width: 377px;
+    //min-width: 377px;
     display: block;
     border: none;
     font-size: 16px;
@@ -371,7 +375,7 @@
   //border-top: 1px solid $border-programs;
 
   @media (min-width: $tablet-width) {
-    margin-top: 52px;
+    //margin-top: 52px;
     margin-left: 52px;
     padding: 0;
 
@@ -399,6 +403,11 @@
   background-image: url("../img/icon_arrow.svg");
   background-repeat: no-repeat;
   background-size: 24px 10px;
+
+  @media (min-width: $tablet-width) {
+    right: -48px;
+    margin-top: 6px;
+  }
 }
 
 .programs__item-link:hover {
