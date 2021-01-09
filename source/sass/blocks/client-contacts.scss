@@ -6,6 +6,7 @@
   border-top: 2px solid $background-button;
   margin-top: 26px;
   padding: 0;
+  margin-left: 0;
 
   @media (min-width: $tablet-width) {
     margin-top: 71px;
@@ -15,8 +16,10 @@
 .client-contacts__title {
   font-size: 24px;
   line-height: 26px;
-  width: 65%;
+  width: 71%;
   margin-bottom: 35px;
+  margin-left: 0;
+  padding-left: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -54,6 +57,7 @@
 
 .client-contacts__label,
 .client-contacts__input {
+  font-family: $font-family;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -68,6 +72,7 @@
 .client-contacts__input {
   height: 46px;
   border: 1px solid $border-menu;
+  padding-left: 14px;
 
   @media (min-width: $tablet-width) {
     height: 52px;
@@ -91,23 +96,27 @@
   content: "";
   position: absolute;
   width: 20px;
-  right: 10px;
-  top: 15px;
+  //right: 10px;
+  //top: 15px;
 }
 
 .client-contacts__label--email::before {
   height: 14px;
+  right: 13px;
+  top: 16px;
   background-image: url("../img/icon_email.svg");
 }
 
 .client-contacts__label--phone::before {
   height: 20px;
+  right: 11px;
+  top: 12px;
   background-image: url("../img/phone.svg");
 }
 
 .client-contacts__label {
-  padding-top: 15px;
-  padding-right: 9px;
+  padding-top: 11px;
+  padding-right: 11px;
 
   @media (min-width: $tablet-width) {
     padding-top: 10px;

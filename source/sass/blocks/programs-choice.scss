@@ -1,8 +1,9 @@
 .programs-choice {
-  padding-top: 22px;
-  padding-bottom: 19px;
+  padding-top: 25px;
+  padding-left: 0;
+  padding-bottom: 3px;
+  margin-left: 0;
   width: 100%;
-  border-bottom: 1px solid $border-programs;
 
   @media (min-width: $tablet-width) {
     border: 1px solid $border-programs;
@@ -15,8 +16,12 @@
   }
 }
 
+.page-form .programs-choice {
+  border-bottom: 1px solid $border-programs;
+}
+
 .programs-choice__item {
-  margin-bottom: 13px;
+  margin-bottom: 19px;
   position: relative;
 
   @media (min-width: $tablet-width) {

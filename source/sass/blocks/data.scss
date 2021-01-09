@@ -11,6 +11,7 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  padding-left: 0;
   padding-top: 37px;
   padding-bottom: 39px;
 
@@ -26,7 +27,7 @@
 
 .data__list {
   border-bottom: 1px solid $border-programs;
-  padding-bottom: 13px;
+  padding-bottom: 8px;
   width: 100%;
 
   @media (min-width: $tablet-width) {
@@ -75,6 +76,7 @@
 }
 
 .data__input {
+  font-family: $font-family;
   border: 1px solid $border-menu;
   padding-left: 15px;
 }
