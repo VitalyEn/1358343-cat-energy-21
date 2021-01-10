@@ -4,7 +4,8 @@
   margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 72px;
+    margin-bottom: 78px;
+    margin-left: 41px;
   }
 
   @media (min-width: $desktop-width) {
@@ -18,8 +19,10 @@
 
   font-family: $font-family;
 
-  @media (min-width: $desktop-width) {
-    min-width: 568px;
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding-left: 63px;
+    padding-right: 65px;
   }
 }
 
@@ -32,9 +35,12 @@
   margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
-    width: 50%;
-    padding-bottom: 17px;
+    width: 43%;
+    padding-bottom: 13px;
+    margin-top: 10px;
     font-size: 16px;
+    letter-spacing: 0;
+    padding-left: 17px;
   }
 
   @media (min-width: $desktop-width) {

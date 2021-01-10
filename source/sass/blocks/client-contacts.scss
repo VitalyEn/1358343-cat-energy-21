@@ -9,7 +9,8 @@
   margin-left: 0;
 
   @media (min-width: $tablet-width) {
-    margin-top: 71px;
+    margin-top: 75px;
+    margin-left: 39px;
   }
 }
 
@@ -36,6 +37,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 34px;
+  }
 }
 
 .client-contacts__item:last-child {
@@ -48,6 +53,10 @@
   grid-template-columns: auto 1fr;
   margin-bottom: 14px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 
   @media (min-width: $desktop-width) {
     width: auto;
@@ -105,6 +114,11 @@
   right: 13px;
   top: 16px;
   background-image: url("../img/icon_email.svg");
+
+  @media (min-width: $tablet-width) {
+    right: 17px;
+    top: 18px;
+  }
 }
 
 .client-contacts__label--phone::before {
@@ -112,6 +126,11 @@
   right: 11px;
   top: 12px;
   background-image: url("../img/phone.svg");
+
+  @media (min-width: $tablet-width) {
+    right: 16px;
+    top: 16px;
+  }
 }
 
 .client-contacts__label {
@@ -120,5 +139,6 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 10px;
+    padding-right: 20px;
   }
 }

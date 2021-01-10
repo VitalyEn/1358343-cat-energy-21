@@ -7,6 +7,11 @@
 
   @media (min-width: $tablet-width) {
     border: 1px solid $border-programs;
+    padding-top: 28px;
+    padding-bottom: 7px;
+    padding-right: 311px;
+    margin-left: 0;
+    width: auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,7 +22,7 @@
 }
 
 .page-form .programs-choice {
-  border-bottom: 1px solid $border-programs;
+  border: 1px solid $border-programs;
 }
 
 .programs-choice__item {
