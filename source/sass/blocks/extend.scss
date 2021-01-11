@@ -8,7 +8,7 @@
   margin-left: 0;
 
   @media (min-width: $tablet-width) {
-    margin-top: 82px;
+    margin-top: 84px;
   }
 }
 
@@ -30,6 +30,11 @@
     margin-right: 447px;
     margin-top: -24px;
     background-color: $main-background;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 966px;
+    margin-bottom: 59px;
   }
 }
 
@@ -58,6 +63,10 @@
     padding-left: 40px;
     padding-top: 6px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 24px;
+  }
 }
 
 .extend__item {
@@ -71,7 +80,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 25%;
+    width: 20%;
   }
 }
 

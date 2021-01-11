@@ -47,41 +47,44 @@
   <main class="page-form">
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
       <h1 class="form__title">Подбор программы</h1>
-      <fieldset class="data">
-        <legend class="data__legend">Заполните анкету, и мы подберем программу&nbsp;питания для вашего кота</legend>
-        <ul class="data__list list-style">
-          <li class="data__item">
-            <label class="data__label" for="name">ИМЯ:*</label>
-            <input class="data__input" type="text" name="name" id="name" value="Барсик" required>
-          </li>
-          <li class="data__item">
-            <label class="data__label" for="weight">Вес (кг):*</label>
-            <input class="data__input" type="number" name="weight" id="weight" value="7" required>
-          </li>
-          <li class="data__item">
-            <label class="data__label" for="age">Возраст&nbsp;(лет):</label>
-            <input class="data__input" type="number" name="age" id="age" value="7">
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="programs-choice">
-        <legend class="visually-hidden">Выбор программы</legend>
-        <ul class="programs-choice__list list-style">
-          <li class="programs-choice__item">
-            <input class="programs-choice__input programs-choice__input--checked" name="program" type="radio" checked value="lower" id="input-lower" >
-            <label for="input-lower">Похудение</label>
-          </li>
-          <li class="programs-choice__item">
-            <input class="programs-choice__input" name="program" type="radio" value="higher" id="input-higher">
-            <label for="input-higher">Набор массы</label>
-          </li>
-          <li class="programs-choice__item">
-            <input class="programs-choice__input" name="program" type="radio" value="unknown" id="input-unknown">
-            <label for="input-unknown">Не знаю (Нужен ваш совет)</label>
-          </li>
-        </ul>
-      </fieldset>
-      </fieldset>
+      <div class="form__wrapper">
+        <fieldset class="data">
+          <legend class="data__legend">Заполните анкету, и мы подберем программу&nbsp;питания для вашего кота</legend>
+          <ul class="data__list list-style">
+            <li class="data__item">
+              <label class="data__label" for="name">ИМЯ:*</label>
+              <input class="data__input" type="text" name="name" id="name" value="Барсик" required>
+            </li>
+            <li class="data__item">
+              <label class="data__label" for="weight">Вес (кг):*</label>
+              <input class="data__input" type="number" name="weight" id="weight" value="7" required>
+            </li>
+            <li class="data__item">
+              <label class="data__label" for="age">Возраст&nbsp;(лет):</label>
+              <input class="data__input" type="number" name="age" id="age" value="7">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="programs-choice">
+          <legend class="visually-hidden">Выбор программы</legend>
+          <ul class="programs-choice__list list-style">
+            <li class="programs-choice__item">
+              <input class="programs-choice__input programs-choice__input--checked" name="program" type="radio" checked value="lower" id="input-lower" >
+              <label for="input-lower">Похудение</label>
+            </li>
+            <li class="programs-choice__item">
+              <input class="programs-choice__input" name="program" type="radio" value="higher" id="input-higher">
+              <label for="input-higher">Набор массы</label>
+            </li>
+            <li class="programs-choice__item">
+              <input class="programs-choice__input" name="program" type="radio" value="unknown" id="input-unknown">
+              <label for="input-unknown">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
+        </fieldset>
+        </fieldset>
+      </div>
+
       <fieldset class="client-contacts">
         <div class="wrapper">
           <legend class="client-contacts__title">Контактные данные (владельца кота)</legend>

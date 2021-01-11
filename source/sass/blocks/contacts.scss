@@ -24,7 +24,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 76px;
+    margin-left: 6px;
   }
 }
 
@@ -48,7 +48,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 82px;
+    margin-right: -27px;
+    //margin-left: 0;
     text-align: left;
   }
 }

@@ -13,4 +13,15 @@
     padding-top: 57px;
     padding-left: 69px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 71px;
+    padding-left: 110px;
+  }
+}
+
+.form__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }

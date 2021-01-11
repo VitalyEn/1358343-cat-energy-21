@@ -11,6 +11,10 @@
   @media (min-width: $tablet-width) {
     margin-top: 98px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 19px;
+  }
 }
 
 .client-contacts__title {
@@ -33,6 +37,10 @@
     margin-top: -24px;
     background-color: $main-background;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 665px;
+  }
 }
 
 .client-contacts__list {
@@ -44,6 +52,10 @@
   @media (min-width: $tablet-width) {
     padding-right: 34px;
     padding-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
   }
 }
 

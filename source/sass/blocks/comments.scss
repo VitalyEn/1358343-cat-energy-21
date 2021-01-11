@@ -10,6 +10,10 @@
   @media (min-width: $tablet-width) {
     margin-top: 89px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 70px;
+  }
 }
 
 .comments__title {
@@ -30,6 +34,10 @@
     margin-right: 447px;
     margin-top: -24px;
     background-color: $main-background;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 996px;
   }
 }
 

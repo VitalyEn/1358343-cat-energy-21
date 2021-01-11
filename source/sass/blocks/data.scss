@@ -9,6 +9,10 @@
   @media (min-width: $tablet-width) {
     padding-left: 70px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+  }
 }
 
 .data__legend {
@@ -26,6 +30,11 @@
 
     padding-top: 54px;
     padding-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 60%;
+    padding-top: 56px;
   }
 }
 

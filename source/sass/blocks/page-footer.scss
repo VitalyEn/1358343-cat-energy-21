@@ -52,6 +52,10 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+  }
 }
 
 .page-footer__title {
