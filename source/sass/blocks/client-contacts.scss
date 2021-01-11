@@ -9,8 +9,7 @@
   margin-left: 0;
 
   @media (min-width: $tablet-width) {
-    margin-top: 75px;
-    margin-left: 39px;
+    margin-top: 98px;
   }
 }
 
@@ -26,9 +25,13 @@
     font-size: 36px;
     line-height: 36px;
     width: auto;
-    padding-right: 42px;
+    padding-left: 38px;
+    //padding-right: 44px;
+    margin-right: 113px;
     padding-bottom: 0;
     margin-bottom: 76px;
+    margin-top: -24px;
+    background-color: $main-background;
   }
 }
 
@@ -40,6 +43,7 @@
 
   @media (min-width: $tablet-width) {
     padding-right: 34px;
+    padding-left: 40px;
   }
 }
 

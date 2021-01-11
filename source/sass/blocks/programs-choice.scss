@@ -6,11 +6,10 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    border: 1px solid $border-programs;
-    padding-top: 28px;
-    padding-bottom: 7px;
-    padding-right: 311px;
-    margin-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 65px;
+    margin-left: 70px;
     width: auto;
   }
 
@@ -21,8 +20,12 @@
   }
 }
 
-.page-form .programs-choice {
-  border: 1px solid $border-programs;
+.programs-choice__list {
+  @media (min-width: $tablet-width) {
+    border: 1px solid $border-programs;
+    padding-top: 30px;
+    padding-bottom: 6px;
+  }
 }
 
 .programs-choice__item {
