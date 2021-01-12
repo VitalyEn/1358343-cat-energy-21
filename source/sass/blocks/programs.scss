@@ -236,7 +236,7 @@
   margin: 0;
   // margin-bottom: 22px;
   padding-top: 32px;
-  padding-bottom: 15px;
+  padding-bottom: 11px;
   padding-left: 70px;
 
   font-weight: normal;
@@ -344,10 +344,7 @@
   border-bottom: 1px solid $border-programs;
 
   @media (min-width: $tablet-width) {
-    margin-right: 314px;
-    margin-left: 52px;
-    margin-top: 26px;
-    margin-bottom: 30px;
+    margin: 24px 275px 30px 52px;
 
     //min-width: 377px;
     display: block;
@@ -357,6 +354,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: inline-block;
+    margin-top: 0;
     margin-right: 52px;
     margin-bottom: 0;
   }

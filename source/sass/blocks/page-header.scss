@@ -10,6 +10,14 @@
   justify-content: space-between;
   width: 100%;
   min-height: 66px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
 }
 
 .page-header__logo {
@@ -17,6 +25,7 @@
   align-items: center;
   width: 100%;
   min-height: 66px;
+  margin-left: 20px;
 
   text-align: center;
 
@@ -24,6 +33,7 @@
     width: 174px;
     height: 52px;
     margin-top: 18px;
+    margin-left: 0;
     border: none;
   }
 

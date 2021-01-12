@@ -23,11 +23,11 @@
 }
 
 .main-nav__toggle {
-  width: 24px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   position: absolute;
   top: -40px;
-  right: 20px;
+  right: 36px;
 
   background-color: $main-background;
   border: none;
@@ -70,8 +70,9 @@
   &::after {
     content: "";
     position: absolute;
-    top: 5px;
-    right: -20px;
+    top: 33%;
+    left: 50%;
+
     width: 25px;
     height: 2px;
     background-color: $menu-color;

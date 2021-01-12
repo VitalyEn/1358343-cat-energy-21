@@ -27,7 +27,7 @@
 }
 
 .example__block {
-  padding-top: 22px;
+  padding-top: 18px;
 
   @media (min-width: $tablet-width) {
     padding-top: 48px;
@@ -117,30 +117,27 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 12px;
-    width: auto;
     font-size: 20px;
     margin-right: 0;
     margin-left: auto;
+    width: 174px;
+    text-align: right;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    width: auto;
     padding-left: 0;
     padding-top: 37px;
+    display: flex;
+    justify-content: space-between;
+    width: 326px;
   }
 }
 
 .example__item-last span {
   @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 40px;
-    right: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    position: static;
-    margin-right: 59px;
+    display: inline-block;
+    padding-bottom: 8px;
   }
 }
 
@@ -202,6 +199,17 @@
     top: -116px;
     right: -41px;
   }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    right: 110px;
+    bottom: 0;
+
+    width: 650px;
+    height: 595px;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .example__live img {
@@ -232,8 +240,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -46px;
-    margin-left: 54px;
+    margin: 0 0 0 auto;
+    width: 573px;
+    padding-top: 20px;
   }
 }
 
@@ -253,6 +262,10 @@
     width: 428px;
     height: 6px;
     background-color: $range-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 22px;
   }
 }
 
@@ -296,6 +309,10 @@
     font-size: 20px;
     line-height: 30px;
     padding: 0 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 
   &:hover {

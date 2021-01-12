@@ -32,10 +32,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
+    display: flex;
     justify-content: space-between;
-
-    grid-template-columns: 250px 250px 250px 250px;
+    flex-wrap: wrap;
   }
 }
 
@@ -68,6 +67,10 @@
     padding: 0;
     padding-top: 151px;
     margin-bottom: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 250px;
   }
 }
 
