@@ -26,8 +26,8 @@
   width: 18px;
   height: 18px;
   position: absolute;
-  top: -40px;
-  right: 36px;
+  top: -42px;
+  right: 0;
 
   background-color: $main-background;
   border: none;
@@ -71,7 +71,7 @@
     content: "";
     position: absolute;
     top: 33%;
-    left: 50%;
+    right: 0;
 
     width: 25px;
     height: 2px;

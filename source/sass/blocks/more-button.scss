@@ -1,0 +1,21 @@
+.more-button {
+  font-family: $font-family;
+  background-color: $background-grey;
+  color: $text-color;
+
+  margin-top: 7px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @media (min-width: $desktop-width) {
+    width: 168px;
+  }
+}
+
+.more-button:hover {
+  background-color: $background-grey-hover;
+}
+
+.more-button:active {
+  color: $button-color-active;
+}

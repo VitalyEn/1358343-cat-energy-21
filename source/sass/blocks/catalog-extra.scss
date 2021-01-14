@@ -1,6 +1,6 @@
 .catalog-extra {
   border-top: 2px solid $background-button;
-  margin-top: 42px;
+  margin-top: 39px;
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
@@ -107,7 +107,7 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
-  width: 80%;
+  width: 88%;
   margin-top: -15px;
   margin-bottom: 36px;
   background-color: $main-background;
@@ -139,7 +139,7 @@
 .catalog-extra__descript {
   font-family: $font-family-other;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 13px;
   color: $text-color;
   margin-bottom: 15px;
   display: flex;
@@ -162,7 +162,12 @@
 }
 
 .catalog-extra__button {
+  font-family: $font-family;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
   @media (min-width: $tablet-width) {
+
     width: 82%;
     margin: auto;
   }

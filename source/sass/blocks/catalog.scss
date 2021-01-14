@@ -3,9 +3,11 @@
 }
 
 .catalog__title {
+  font-family: $font-family;
+  letter-spacing: -1.2px;
   font-size: 36px;
   line-height: 36px;
-  padding-top: 27px;
+  padding-top: 30px;
   padding-bottom: 41px;
   margin: 0;
   border-bottom: 1px solid $border-menu;
@@ -77,15 +79,16 @@
 }
 
 .catalog__item-title {
+  width: 53%;
   font-family: $font-family;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: $menu-color;
-  width: 50%;
+
   margin-top: 0;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -100,6 +103,7 @@
 }
 
 .catalog__descript {
+  width: 50%;
   padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
@@ -107,35 +111,11 @@
   }
 }
 
-.data-list {
-  width: 100%;
-}
-
-.data-list__item {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 6px;
-
-  @media (min-width: $tablet-width) {
-    font-size: 16px;
-    line-height: 16px;
-    width: 249px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 173px;
-  }
-}
-
-.data-list__item p {
-  margin: 0;
-}
-
 .catalog__more {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-top: 53px;
+  padding-top: 32px;
   margin-top: 25px;
   position: relative;
   background-image: url("../img/plus.svg");
@@ -159,6 +139,7 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $menu-color;
+  margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -184,28 +165,4 @@
     margin: 0;
     margin-bottom: 87px;
   }
-}
-
-.item-button {
-  @media (min-width: $desktop-width) {
-    width: 168px;
-  }
-}
-
-.more-button {
-  font-family: $font-family;
-  background-color: $background-grey;
-  color: $text-color;
-
-  @media (min-width: $desktop-width) {
-    width: 168px;
-  }
-}
-
-.more-button:hover {
-  background-color: $background-grey-hover;
-}
-
-.more-button:active {
-  color: $button-color-active;
 }

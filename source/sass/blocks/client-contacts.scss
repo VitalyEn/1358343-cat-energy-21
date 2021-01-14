@@ -4,7 +4,7 @@
 
 .client-contacts {
   border-top: 2px solid $background-button;
-  margin-top: 26px;
+  margin-top: 44px;
   padding: 0;
   margin-left: 0;
 
@@ -20,10 +20,12 @@
 .client-contacts__title {
   font-size: 24px;
   line-height: 26px;
-  width: 71%;
+  width: 80%;
   margin-bottom: 35px;
-  margin-left: 0;
-  padding-left: 0;
+  margin-left: -21px;
+  padding-left: 20px;
+  margin-top: -18px;
+  background-color: $main-background;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -35,7 +37,8 @@
     padding-bottom: 0;
     margin-bottom: 76px;
     margin-top: -24px;
-    background-color: $main-background;
+    margin-left: 0;
+    //background-color: $main-background;
   }
 
   @media (min-width: $desktop-width) {

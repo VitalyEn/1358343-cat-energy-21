@@ -26,19 +26,40 @@
     left: 110px;
     top: 95px;
     background-color: $main-background;
+    z-index: 5;
   }
 }
 
 .page-footer__map {
   width: 100%;
   height: 362px;
-
+  position: relative;
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (min-width: $tablet-width) {
     height: 400px;
+  }
+}
+
+.page-footer__map img {
+  width: 57px;
+  margin: auto;
+
+  position: absolute;
+  left: 42%;
+  top: 42%;
+
+  @media (min-width: $tablet-width) {
+    left: 43%;
+    top: 43%;
+    width: 113px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 63%;
+    top: 31%;
   }
 }
 

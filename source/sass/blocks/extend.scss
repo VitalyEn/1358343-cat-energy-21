@@ -3,21 +3,24 @@
 }
 
 .extend {
-  margin-top: 19px;
+  margin-top: 34px;
   padding: 0;
   margin-left: 0;
 
   @media (min-width: $tablet-width) {
-    margin-top: 84px;
+    margin-top: 82px;
   }
 }
 
 .extend__title {
   font-size: 24px;
   line-height: 26px;
-  width: 59%;
+  width: 66%;
   margin-bottom: 34px;
-  padding-left: 0;
+  padding-left: 20px;
+  margin-top: -15px;
+  margin-left: -20px;
+  background-color: $main-background;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -29,7 +32,8 @@
     padding-left: 39px;
     margin-right: 447px;
     margin-top: -24px;
-    background-color: $main-background;
+    margin-left: 0;
+    //background-color: $main-background;
   }
 
   @media (min-width: $desktop-width) {

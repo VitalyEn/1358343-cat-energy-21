@@ -45,8 +45,8 @@
   </header>
 
   <main class="page-form">
-    <h1 class="form__title">Подбор программы</h1>
-    <p class="data__legend">Заполните анкету, и мы подберем программу&nbsp;питания для вашего кота</p>
+    <h1 class="form__title wrapper">Подбор программы</h1>
+    <p class="data__legend wrapper">Заполните анкету, и мы подберем программу&nbsp;питания для вашего кота</p>
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
 
       <div class="wrapper">
@@ -107,8 +107,7 @@
       <fieldset class="comments">
         <div class="wrapper">
           <legend class="comments__title">Комментарий</legend>
-            <textarea class="comments__input">   Расскажите обо всех повадках кота
-            </textarea>
+            <textarea class="comments__input" placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
 
       </fieldset>
@@ -138,7 +137,7 @@
 
       </fieldset>
 
-      <div class="form-button">
+      <div class="form-button wrapper">
         <button class="button form-button__button" type="submit" name="button">отправить заявку</button>
         <p class="form-button__text"><sup>*</sup> — Обязательные поля</p>
       </div>
@@ -152,6 +151,10 @@
       <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
     </div>
     <div class="page-footer__map">
+      <picture>
+        <source type="image/webp" srcset="img/map-pin.webp 1x, img/map-pin@2x.webp 2x">
+          <img src="img/map-pin.png" srcset="img/map-pin@2x.png 2x" width="57" height="53" alt="Логотип">
+      </picture>
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4382.7567246164945!2d30.322359218836958!3d59.93794329729201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1609849353192!5m2!1sru!2sru" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
     <div class="page-footer__links wrapper">

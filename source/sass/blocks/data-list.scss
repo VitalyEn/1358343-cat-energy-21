@@ -1,4 +1,25 @@
+.data-list {
+  width: 100%;
+}
+
+.data-list__item {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+    width: 249px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 173px;
+  }
+}
+
 .data-list__item p {
+  margin: 0;
   font-family: $font-family-other;
   font-size: 12px;
   line-height: 16px;
