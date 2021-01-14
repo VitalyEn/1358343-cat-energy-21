@@ -3,6 +3,12 @@
   padding-top: 10px;
   padding-bottom: 10px;
 
+  @media (min-width: $tablet-width) {
+    width: 248px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 168px;
   }

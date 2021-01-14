@@ -13,9 +13,10 @@
   border-bottom: 1px solid $border-menu;
 
   @media (min-width: $tablet-width) {
+    letter-spacing: -2px;
     font-size: 60px;
     line-height: 60px;
-    padding-top: 64px;
+    padding-top: 57px;
     padding-bottom: 163px;
     border: none;
   }
@@ -107,7 +108,9 @@
   padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 42px;
+    width: 77%;
+    padding-bottom: 21px;
+    padding-top: 36px;
   }
 }
 
