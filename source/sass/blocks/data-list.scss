@@ -11,6 +11,7 @@
     font-size: 16px;
     line-height: 16px;
     width: 249px;
+    //padding-left: 10px;
     padding-bottom: 7px;
     border-bottom: 1px solid $border-hover;
     margin-bottom: 8px;
@@ -18,6 +19,7 @@
 
   @media (min-width: $desktop-width) {
     width: 173px;
+    padding-left: 10px;
   }
 }
 
