@@ -64,9 +64,13 @@
     line-height: 30px;
     padding-top: 10px;
     padding-bottom: 103px;
-    padding-left: 4px;
+    padding-left: 18px;
     min-height: 174px;
     margin-left: 40px;
     width: 89%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
   }
 }

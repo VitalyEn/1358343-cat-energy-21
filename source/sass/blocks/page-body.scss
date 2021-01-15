@@ -1,4 +1,6 @@
 .page-body {
   background-color: $main-background;
-  max-width: $desktop-width;
+  display: grid;
+
+  //max-width: $desktop-width;
 }

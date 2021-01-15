@@ -15,6 +15,7 @@
     flex-direction: row;
     justify-content: space-between;
     padding-top: 56px;
+    padding-bottom: 60px;
   }
 }
 
@@ -202,7 +203,8 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    right: 110px;
+    top: -74px;
+    right: 127px;
     bottom: 0;
 
     width: 650px;
@@ -240,6 +242,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    top: -67px;
+    left: 17px;
     margin: 0 0 0 auto;
     width: 573px;
     padding-top: 20px;

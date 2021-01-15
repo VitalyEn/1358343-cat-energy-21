@@ -55,6 +55,7 @@
     }
 
     @media (min-width: $desktop-width) {
+      position: absolute;
       top: -21%;
       right: 0;
       bottom: 0;
@@ -134,7 +135,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 107px;
-    margin-left: 160px;
+    margin-left: 50px;
   }
 }
 
@@ -159,7 +160,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 160px;
+    margin-left: 50px;
     margin-bottom: 52px;
   }
 }
@@ -199,7 +200,7 @@
   @media (min-width: $desktop-width) {
     position: static;
     margin: 0;
-    margin-left: 160px;
+    margin-left: 50px;
   }
 }
 
